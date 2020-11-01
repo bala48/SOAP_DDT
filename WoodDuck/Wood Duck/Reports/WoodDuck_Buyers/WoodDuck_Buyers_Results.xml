@@ -1,0 +1,203 @@
+
+<Reports>
+    <TestExecutionSummary>
+        <DateAndTime>11/02/2018,  11:24:40</DateAndTime>
+        <SuiteExecuted>WoodDuck_Buyers</SuiteExecuted>
+        <TestExecuted></TestExecuted>
+        <ServiceEndPoint>&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;</ServiceEndPoint>
+    </TestExecutionSummary>
+    <Testcases>
+        <Testcase>
+            <Name>WoodDuck_BuyersTest</Name>
+            <Description>testcase 1</Description>
+            <Status>failed</Status>
+            <Duration></Duration>
+            <Steps>
+                <Step>
+                    <Name>Setup-</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 11:24:38</Timestamp>
+                </Step>
+                <Step>
+                    <Name>TokenGeneration - Request 1-</Name>
+                    <Description> REQUEST:POST http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token?username=ireddy&amp;password=Password1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Content-Length: 0&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: text/plain; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 05:54:12 GMT&#xD;
+&#xD;
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTEzODA1MiIsImV4cCI6IjE1NDEyMjQ0NTIifQ.REh19qo0rw9jEYENEgqsa-ONs2WD-pyzvzCHdCwFC5A</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 11:24:38</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_AllBuyers - Request 1-</Name>
+                    <Description> REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Buyer HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTEzODA1MiIsImV4cCI6IjE1NDEyMjQ0NTIifQ.REh19qo0rw9jEYENEgqsa-ONs2WD-pyzvzCHdCwFC5A&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 05:54:12 GMT&#xD;
+&#xD;
+[]</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 11:24:38</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_SpecificBuyer_BuyerId - Request 1-</Name>
+                    <Description> REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Buyer/LMATHYS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTEzODA1MiIsImV4cCI6IjE1NDEyMjQ0NTIifQ.REh19qo0rw9jEYENEgqsa-ONs2WD-pyzvzCHdCwFC5A&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 05:54:12 GMT&#xD;
+&#xD;
+{"buyerId":"LMATHYS","aliasCode":null,"name":"LARRY MATHYS","title":"","company":"MADERA AMERICANA INC","address1":"","city":"","state":"","postalCode":"","country":null,"county":null,"email":"larry@americanlumber.net","phone":"979-778-4084","cellPhone":null,"customerCount":1,"createdDate":"2018-10-15T16:09:01.117","createdBy":"SEED","lastChanged":"2018-11-01T23:11:09.72","lastChangedBy":"DATA_SYNC","isNew":"N","isRevised":"N","activeStatus":"Y","buyerDisplay":"LMATHYS - LARRY MATHYS"}</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 11:24:39</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_Buyer_ByCustomerId - Request 1-</Name>
+                    <Description> REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Buyer/ByCustomerId/900453 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTEzODA1MiIsImV4cCI6IjE1NDEyMjQ0NTIifQ.REh19qo0rw9jEYENEgqsa-ONs2WD-pyzvzCHdCwFC5A&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 05:54:12 GMT&#xD;
+&#xD;
+[{"buyerId":"KIBEL","aliasCode":null,"name":"KIFFIN BELL","title":"","company":"MATHEUS LUMBER COMPANY, INC.","address1":"","city":"","state":"","postalCode":"","country":null,"county":null,"email":"kiffin@matheuslumber.com","phone":"8442586237","cellPhone":null,"customerCount":2,"createdDate":"2018-10-15T16:09:00.04","createdBy":"SEED","lastChanged":"2018-11-01T23:11:08.88","lastChangedBy":"DATA_SYNC","isNew":"N","isRevised":"N","activeStatus":"Y","buyerDisplay":"KIBEL - KIFFIN BELL"},{"buyerId":"PROBBINS","aliasCode":null,"name":"PHIL ROBBINS","title":"BUYER","company":"MATHEUS LUMBER COMPANY, INC.","address1":"","city":"","state":"","postalCode":"","country":null,"county":null,"email":"phil@matheuslumber.com","phone":"2084579829","cellPhone":null,"customerCount":2,"createdDate":"2018-10-15T16:09:04.68","createdBy":"SEED","lastChanged":"2018-11-01T23:11:12.373","lastChangedBy":"DATA_SYNC","isNew":"N","isRevised":"N","activeStatus":"Y","buyerDisplay":"PROBBINS - PHIL ROBBINS"},{"buyerId":"RFOSSETT","aliasCode":null,"name":"ROGER FOSSETT","title":"BUYER","company":"MATHEUS LUMBER COMPANY, INC.","address1":"","city":"","state":"","postalCode":"","country":null,"county":null,"email":"roger@matheuslumber.com","phone":"9785402885","cellPhone":null,"customerCount":2,"createdDate":"2018-10-15T16:09:05.723","createdBy":"SEED","lastChanged":"2018-11-01T23:11:13.25","lastChangedBy":"DATA_SYNC","isNew":"N","isRevised":"N","activeStatus":"Y","buyerDisplay":"RFOSSETT - ROGER FOSSETT"}]</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 11:24:39</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_ListofBuyersCustomers_BuyerId - Request 1-</Name>
+                    <Description> REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Buyer/Customers/LMATHYS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTEzODA1MiIsImV4cCI6IjE1NDEyMjQ0NTIifQ.REh19qo0rw9jEYENEgqsa-ONs2WD-pyzvzCHdCwFC5A&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 05:54:13 GMT&#xD;
+&#xD;
+[{"buyerId":"LMATHYS","buyerName":"LARRY MATHYS","customerId":"015242","customerName":"AMERICAN LUMBER","customerAliasCode":"AMLBR","createdDate":"2018-10-15T16:09:19.003","createdBy":"SEED","lastChanged":"2018-11-01T23:11:24.94","lastChangedBy":"DATA_SYNC","isNew":"N","isRevised":"N","activeStatus":"Y"}]</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 11:24:39</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_Search_ListOfBuyers_TERM - Request 1-</Name>
+                    <Description> REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Buyer/Search/LMATHYS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTEzODA1MiIsImV4cCI6IjE1NDEyMjQ0NTIifQ.REh19qo0rw9jEYENEgqsa-ONs2WD-pyzvzCHdCwFC5A&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 05:54:13 GMT&#xD;
+&#xD;
+[{"buyerId":"LMATHYS","aliasCode":null,"name":"LARRY MATHYS","title":"","company":"MADERA AMERICANA INC","address1":"","city":"","state":"","postalCode":"","country":null,"county":null,"email":"larry@americanlumber.net","phone":"979-778-4084","cellPhone":null,"customerCount":0,"createdDate":"2018-10-15T16:09:01.117","createdBy":"SEED","lastChanged":"2018-11-01T23:11:09.72","lastChangedBy":"DATA_SYNC","isNew":"N","isRevised":"N","activeStatus":"Y","buyerDisplay":"LMATHYS - LARRY MATHYS"}]</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 11:24:39</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_SearchBuyer_Term_ByCustomerId - Request 1-</Name>
+                    <Description> REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Buyer/Search/Math/015242 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTEzODA1MiIsImV4cCI6IjE1NDEyMjQ0NTIifQ.REh19qo0rw9jEYENEgqsa-ONs2WD-pyzvzCHdCwFC5A&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 05:54:13 GMT&#xD;
+&#xD;
+[{"buyerId":"LMATHYS","aliasCode":null,"name":"LARRY MATHYS","title":"","company":"MADERA AMERICANA INC","address1":"","city":"","state":"","postalCode":"","country":null,"county":null,"email":"larry@americanlumber.net","phone":"979-778-4084","cellPhone":null,"customerCount":0,"createdDate":"2018-10-15T16:09:01.117","createdBy":"SEED","lastChanged":"2018-11-01T23:11:09.72","lastChangedBy":"DATA_SYNC","isNew":"N","isRevised":"N","activeStatus":"Y","buyerDisplay":"LMATHYS - LARRY MATHYS"}]</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 11:24:40</Timestamp>
+                </Step>
+                <Step>
+                    <Name>PUT_SpecificBuyer_BuyerId - Request 1-</Name>
+                    <Description>[Status] Found Invalid URI in the response. Expression: actualHTTPResponse[0].contains(ExpectedHTTPResponse)&lt;br&gt; REQUEST:PUT http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Buyer/LMATHYS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTEzODA1MiIsImV4cCI6IjE1NDEyMjQ0NTIifQ.REh19qo0rw9jEYENEgqsa-ONs2WD-pyzvzCHdCwFC5A&#xD;
+Content-Length: 565&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+&#xD;
+{
+  "buyerId": "LMATHYS",
+  "aliasCode": "1234",
+  "name": "Buyer",
+  "title": "BuyerId",
+  "company": "WoodDuck",
+  "address1": "Buyers",
+  "city": "Atlanta",
+  "state": "AtlantaState",
+  "postalCode": "520011",
+  "country": "USA",
+  "county": "USACOUNTRY",
+  "email": "Buyer@gamil.com",
+  "phone": "52001111",
+  "cellPhone": "43261719",
+  "customerCount": 0,
+  "createdDate": "2018-11-02T05:13:40.232Z",
+  "createdBy": "vamsi",
+  "lastChanged": "2018-11-02T05:13:40.232Z",
+  "lastChangedBy": "vamsi",
+  "isNew": "Y",
+  "isRevised": "N",
+  "activeStatus": "True"
+}RESPONSE: HTTP/1.1 500 Internal Server Error&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 05:54:13 GMT&#xD;
+Content-Length: 0&#xD;
+&#xD;
+</Description>
+                    <Status>failed</Status>
+                    <Timestamp>11/02/2018AND 11:24:40</Timestamp>
+                </Step>
+            </Steps>
+        </Testcase>
+    </Testcases>
+</Reports>

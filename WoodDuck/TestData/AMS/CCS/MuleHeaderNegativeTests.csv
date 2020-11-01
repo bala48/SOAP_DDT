@@ -1,0 +1,41 @@
+Row_Index,RunRow,TestScenario_ID,TestScenario_DetailedDescription,RegionID,MessageType,ClientSource,ClientLocationNumber,LocationNumber,HttpStatus
+1,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_Null, ,,,,,200
+2,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_0,0,,,,,200
+3,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_4,4,,,,,200
+4,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_Numeric,1234567890,,,,,200
+5,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_Alphabetic,ABCDEFGH,,,,,200
+6,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_AlphaNumeric,ABC12345,,,,,200
+7,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_SpecialCharacter,#$%*()#$,,,,,200
+8,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_SpecialChar,123-Road1#$%,,,,,200
+9,TRUE,Header_RegionID,CCS_Neg_Mule_Header_RegionID_SpecialCharHyphen,abcd-ed-gh,,,,,200
+10,TRUE,Header_MessageType,CCS_Neg_Mule_Header_MessageType_Invalid,,AMS009,,,,200
+11,TRUE,Header_MessageType,CCS_Neg_Mule_Header_MessageType_Null,, ,,,,200
+12,TRUE,Header_MessageType,CCS_Neg_Mule_Header_MessageType_Numeric,,1234567890,,,,200
+13,TRUE,Header_MessageType,CCS_Neg_Mule_Header_MessageType_Alphabetic,,ABCDEFGH,,,,200
+14,TRUE,Header_MessageType,CCS_Neg_Mule_Header_MessageType_AlphaNumeric,,ABC12345,,,,200
+15,TRUE,Header_MessageType,CCS_Neg_Mule_Header_MessageType_SpecialCharacter,,#$%*()#$,,,,200
+16,TRUE,Header_MessageType,CCS_Neg_Mule_Header_MessageType_SpecialChar,,123-Road1#$%,,,,200
+17,TRUE,Header_MessageType,CCS_Neg_Mule_Header_MessageType_SpecialCharHyphen,,abcd-ed-gh,,,,200
+18,TRUE,Header_ClientSource,CCS_Neg_Mule_Header_ClientSource_6,,,6,,,200
+19,TRUE,Header_ClientSource,CCS_Neg_Mule_Header_ClientSource_Null,,, ,,,200
+20,TRUE,Header_ClientSource,CCS_Neg_Mule_Header_ClientSource_Numeric,,,1234567890,,,200
+21,TRUE,Header_ClientSource,CCS_Neg_Mule_Header_ClientSource_Alphabetic,,,ABCDEFGH,,,200
+22,TRUE,Header_ClientSource,CCS_Neg_Mule_Header_ClientSource_AlphaNumeric,,,ABC12345,,,200
+23,TRUE,Header_ClientSource,CCS_Neg_Mule_Header_ClientSource_SpecialCharacter,,,#$%*()#$,,,200
+24,TRUE,Header_ClientSource,CCS_Neg_Mule_Header_ClientSource_SpecialChar,,,123-Road1#$%,,,200
+25,TRUE,Header_ClientSource,CCS_Neg_Mule_Header_ClientSource_SpecialCharHyphen,,,abcd-ed-gh,,,200
+26,TRUE,Header_ClientLocationNumber,CCS_Neg_Mule_Header_ClientLocationNumber_SpecialCharacter,,,,#$%*()#$,,200
+27,TRUE,Header_ClientLocationNumber,CCS_Neg_Mule_Header_ClientLocationNumber_SpecialChar,,,,123-Road1#$%,,200
+28,TRUE,Header_ClientLocationNumber,CCS_Neg_Mule_Header_ClientLocationNumber_SpecialCharHyphen,,,,abcd-ed-gh,,200
+29,TRUE,Header_ClientLocationNumber,CCS_Neg_Mule_Header_ClientLocationNumber_Null,,,, ,,200
+30,TRUE,Header_ClientLocationNumber,CCS_Neg_Mule_Header_ClientLocationNumber_OverMaxLimit_31,,,,TTENCHARACTTENCHARACTTENCHARACT,,200
+31,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_Invalid,,,,,99999,200
+32,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_Numeric,,,,,1234567890,200
+33,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_Alphabetic,,,,,ABCDEFGH,200
+34,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_AlphaNumeric,,,,,ABC12345,200
+35,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_SpecialCharacter,,,,,#$%*()#$,200
+36,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_SpecialChar,,,,,13-Roa1#$%,200
+37,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_SpecialCharHyphen,,,,,abcd-ed-gh,200
+38,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_MaxLimit_10,,,,,TENCHARACT,200
+39,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_Null,,,,, ,200
+40,TRUE,Header_LocationNumber,CCS_Neg_Mule_Header_LocationNumber_OverMaxLimit_11,,,,,TTENCHARACT,200

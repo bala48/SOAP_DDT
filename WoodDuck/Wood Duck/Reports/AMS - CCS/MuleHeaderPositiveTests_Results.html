@@ -1,0 +1,242 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>Automated Test Execution Report</title>
+      <link rel="stylesheet" type="text/css" href="stylesheet/Stylesheet.css">
+   </head>
+   <body>
+      <table id="Logos">
+         <thead>
+            <tr class="content">
+               <th colspan="2" class="Logos">
+                  <div style="float:left"><img src="screenshots/Cigniti.png"></div>
+                  <div style="float:right"><img src="screenshots/Client.png"></div>
+               </th>
+               <th colspan="2" class="Logos"></th>
+            </tr>
+         </thead>
+      </table>
+      <table id="header">
+         <tr class="heading">
+            <th style="font-size:1.4em;" colspan="4">Automated Test Execution
+               							Results
+            </th>
+         </tr>
+         <tr class="subheading" bgcolor="#9acd32">
+            <td>Date and Time:</td>
+            <td>09/18/2018,  14:49:19</td>
+            <td>Suites Executed:</td>
+            <td>MuleHeaderPositiveTests</td>
+         </tr>
+         <tr class="subheading" bgcolor="#9acd32">
+            <td colspan="3">Tests Executed:</td>
+            <td></td>
+         </tr>
+         <tr class="subheading" bgcolor="#9acd32">
+            <td colspan="3">
+               							Service EndPoint URL(s):
+               							<br>https://ams-ccs-rest-test.test-racapi.com<br>
+            </td>
+            <td style="text-align : center;" colspan="1"><img width="8%" title="Expand All" src="screenshots/expand.png" onclick="expandAll()"><img title="Collapse All" width="12%" src="screenshots/collapse.png" onclick="collapseAll()"><img title="Refresh" width="8%" src="screenshots/refresh.png" onclick="location.reload();"></td>
+         </tr>
+      </table>
+      <div id="main">
+         <table id="summaryTable" cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+            <tr class="heading">
+               <th width="30%">Test Case</th>
+               <th width="40%">Description</th>
+               <th width="15%">Status</th>
+               <th width="15%">Duration</th>
+            </tr>
+         </table>
+         <table id="footer">
+            <tfoot>
+               <tr class="heading">
+                  <th colspan="4">Total Duration In Seconds (Including Report
+                     									Creation) : 179
+                  </th>
+               </tr>
+               <tr class="content">
+                  <td class="pass">Tests Passed:</td>
+                  <td class="pass"> 2</td>
+                  <td class="fail">Tests Failed:</td>
+                  <td class="fail"> 2</td>
+               </tr>
+               <tr class="powered">
+                  <td style="text-align: right; border: 0px solid rgb(77, 124, 123); padding: 0px; background: none repeat scroll 0% 0% rgb(189, 189, 189); font-size: x-small; font-style: italic;" colspan="6"> Automated Test Execution Reports, powered by Cigniti</td>
+               </tr>
+            </tfoot>
+         </table>
+      </div>
+      <div id="details" style="display:none">
+         <table id="detailsTable" cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%" style="">
+            <tr class="heading" style="display:none">
+               <th style="width:10%">Step</th>
+               <th style="width:80%">Description</th>
+               <th style="width:5%">Status</th>
+               <th style="width:5%">TimeStamp</th>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td target="Header_RegionID" bgcolor="#CEF6EC" style="text-align : left" colspan="6" title="Nested Diagnostic Context" status="passed"> Iteration 1 CCS_Header_RegionID_1</td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">setup</td>
+               <td title="Step Description" style="text-align : left; color : red;"> </td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:12</span></td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">CCS </td>
+               <td title="Step Description" style="text-align : left"><span class="passed"> </span><textarea title="REQUEST" rows="20" style="width: 50%;">POST https://ams-ccs-rest-test.test-racapi.com/CCS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+ClientOriginator: 42&#xD;
+Revision: 1.1&#xD;
+ClientID: 40&#xD;
+MessageID: CCS001 -  1537262353916&#xD;
+Content-Length: 3411&#xD;
+Host: ams-ccs-rest-test.test-racapi.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+Authorization: Basic ZGV2RVNCZGV2MjpkZXZFU0JkZXYyIQ==&#xD;
+&#xD;
+</textarea><textarea title="RESPONSE" rows="20" style="width: 50%;"> HTTP/1.1 201 &#xD;
+Content-Type: application/json;charset=UTF-8&#xD;
+Date: Tue, 18 Sep 2018 09:19:11 GMT&#xD;
+MessageID: CCS001 -  1537262353916&#xD;
+Server: &#xD;
+Content-Length: 141&#xD;
+Connection: keep-alive&#xD;
+&#xD;
+{
+  "CustomerID": "9999394251026",
+  "StatusInfo": {
+    "StatusCode": "200",
+    "StatusCodeDetail": "Customer create was successful."
+  }
+}</textarea></td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:12</span></td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">Teardown</td>
+               <td title="Step Description" style="text-align : left"><span class="passed"> </span></td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:16</span></td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td target="Header_RegionID" bgcolor="#CEF6EC" style="text-align : left" colspan="6" title="Nested Diagnostic Context" status="passed"> Iteration 2 CCS_Header_RegionID_2</td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">setup</td>
+               <td title="Step Description" style="text-align : left; color : red;"> </td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:16</span></td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">CCS </td>
+               <td title="Step Description" style="text-align : left"><span class="passed"> </span><textarea title="REQUEST" rows="20" style="width: 50%;">POST https://ams-ccs-rest-test.test-racapi.com/CCS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+ClientOriginator: 42&#xD;
+Revision: 1.1&#xD;
+ClientID: 40&#xD;
+MessageID: CCS001 -  1537262357755&#xD;
+Content-Length: 3411&#xD;
+Host: ams-ccs-rest-test.test-racapi.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+Authorization: Basic ZGV2RVNCZGV2MjpkZXZFU0JkZXYyIQ==&#xD;
+&#xD;
+</textarea><textarea title="RESPONSE" rows="20" style="width: 50%;"> HTTP/1.1 201 &#xD;
+Content-Type: application/json;charset=UTF-8&#xD;
+Date: Tue, 18 Sep 2018 09:19:13 GMT&#xD;
+MessageID: CCS001 -  1537262357755&#xD;
+Server: &#xD;
+Content-Length: 141&#xD;
+Connection: keep-alive&#xD;
+&#xD;
+{
+  "CustomerID": "9999394251030",
+  "StatusInfo": {
+    "StatusCode": "200",
+    "StatusCodeDetail": "Customer create was successful."
+  }
+}</textarea></td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:16</span></td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">Teardown</td>
+               <td title="Step Description" style="text-align : left"><span class="passed"> </span></td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:18</span></td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td target="Header_RegionID" bgcolor="#CEF6EC" style="text-align : left" colspan="6" title="Nested Diagnostic Context" status="passed"> Iteration 3 CCS_Header_RegionID_3</td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">setup</td>
+               <td title="Step Description" style="text-align : left; color : red;"> </td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:18</span></td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">CCS </td>
+               <td title="Step Description" style="text-align : left"><span class="passed"> </span><textarea title="REQUEST" rows="20" style="width: 50%;">POST https://ams-ccs-rest-test.test-racapi.com/CCS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+ClientOriginator: 42&#xD;
+Revision: 1.1&#xD;
+ClientID: 40&#xD;
+MessageID: CCS001 -  1537262368189&#xD;
+Content-Length: 3411&#xD;
+Host: ams-ccs-rest-test.test-racapi.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+Authorization: Basic ZGV2RVNCZGV2MjpkZXZFU0JkZXYyIQ==&#xD;
+&#xD;
+</textarea><textarea title="RESPONSE" rows="20" style="width: 50%;"> HTTP/1.1 201 &#xD;
+Content-Type: application/json;charset=UTF-8&#xD;
+Date: Tue, 18 Sep 2018 09:19:15 GMT&#xD;
+MessageID: CCS001 -  1537262368189&#xD;
+Server: &#xD;
+Content-Length: 141&#xD;
+Connection: keep-alive&#xD;
+&#xD;
+{
+  "CustomerID": "9999394251034",
+  "StatusInfo": {
+    "StatusCode": "200",
+    "StatusCodeDetail": "Customer create was successful."
+  }
+}</textarea></td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:18</span></td>
+            </tr>
+            <tr class="Header_RegionID" style="display:none">
+               <td title="Function Name" style="text-align : left;">Teardown</td>
+               <td title="Step Description" style="text-align : left"><span class="passed"> </span></td>
+               <td title="passed Step" class="passed" style="text-align: center;"><font color="green"><img src="screenshots/passed.ico" height="20" width="20"></font></td>
+               <td><span style="visibility:hidden;font-size : 0%;">09/18/2018</span><span> 14:49:19</span></td>
+            </tr>
+         </table>
+         <table id="footer2">
+            <tfoot>
+               <tr class="heading">
+                  <th colspan="6">Total Duration In Seconds (Including Report
+                     									Creation) : 179
+                  </th>
+               </tr>
+               <tr class="content">
+                  <td class="executed">Total Iterations:</td>
+                  <td class="executed"> 5</td>
+                  <td class="pass">Iterations Passed:</td>
+                  <td class="pass"> 2</td>
+                  <td class="fail">Iterations Failed:</td>
+                  <td class="fail"> 2</td>
+               </tr>
+            </tfoot>
+         </table>
+      </div><script type="text/javascript" src="scripts/script.js"></script></body>
+</html>

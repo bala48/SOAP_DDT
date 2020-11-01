@@ -1,0 +1,55 @@
+
+<Reports>
+    <TestExecutionSummary>
+        <DateAndTime>10/23/2018,  17:06:03</DateAndTime>
+        <SuiteExecuted>WoodDuck_Message</SuiteExecuted>
+        <TestExecuted></TestExecuted>
+        <ServiceEndPoint>&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;</ServiceEndPoint>
+    </TestExecutionSummary>
+    <Testcases>
+        <Testcase>
+            <Name>Message_Details</Name>
+            <Description>testcase 1</Description>
+            <Status>failed</Status>
+            <Duration></Duration>
+            <Steps>
+                <Step>
+                    <Name>TokenGeneration - Request 1 1-</Name>
+                    <Description> REQUEST:POST http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token?username=ireddy&amp;password=Password1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Content-Length: 0&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: text/plain; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Tue, 23 Oct 2018 11:35:36 GMT&#xD;
+&#xD;
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MDI5NDUzNiIsImV4cCI6IjE1NDAzODA5MzYifQ.pinGzzlnDX4J3ZpwohYt-mMjBHI64kyXBv0lEAbCbi8</Description>
+                    <Status>passed</Status>
+                    <Timestamp>10/23/2018AND 17:06:02</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Message_Get_UserId - Request 1-</Name>
+                    <Description>[Script Assertion] Found Invalid URI in the response. Expression: actualHTTPResponse[0].contains(ExpectedHTTPResponse)&lt;br&gt; REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Message/ByUserId/ HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MDI5NDUzNiIsImV4cCI6IjE1NDAzODA5MzYifQ.pinGzzlnDX4J3ZpwohYt-mMjBHI64kyXBv0lEAbCbi8&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 204 No Content&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Tue, 23 Oct 2018 11:35:36 GMT&#xD;
+</Description>
+                    <Status>failed</Status>
+                    <Timestamp>10/23/2018AND 17:06:03</Timestamp>
+                </Step>
+            </Steps>
+        </Testcase>
+    </Testcases>
+</Reports>

@@ -1,0 +1,66 @@
+
+<Reports>
+    <TestExecutionSummary>
+        <DateAndTime>10/17/2018,  16:42:22</DateAndTime>
+        <SuiteExecuted>Facility</SuiteExecuted>
+        <TestExecuted></TestExecuted>
+        <ServiceEndPoint>&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;</ServiceEndPoint>
+    </TestExecutionSummary>
+    <Testcases>
+        <Testcase>
+            <Name>Tokengeneration</Name>
+            <Description>testcase 1</Description>
+            <Status>finished</Status>
+            <Duration></Duration>
+            <Steps>
+                <Step>
+                    <Name>TokenGeneration - Request 1-</Name>
+                    <Description> REQUEST:POST http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token?username=ireddy&amp;password=Password1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Content-Length: 0&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: text/plain; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Wed, 17 Oct 2018 11:11:55 GMT&#xD;
+&#xD;
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTUzOTc3NDcxNSIsImV4cCI6IjE1Mzk4NjExMTUifQ.jVNmQBe2YhGGStub3XAJbUxO5ZAGInpYPr56E0Zlupw</Description>
+                    <Status>passed</Status>
+                    <Timestamp>10/17/2018AND 16:42:21</Timestamp>
+                </Step>
+            </Steps>
+        </Testcase>
+        <Testcase>
+            <Name>GetAllFacilities</Name>
+            <Description>testcase 2</Description>
+            <Status>failed</Status>
+            <Duration></Duration>
+            <Steps>
+                <Step>
+                    <Name>GetAllFacilities - Request 1-</Name>
+                    <Description>[Script Assertion] Found Invalid URI in the response. Expression: actualHTTPResponse[0].contains(ExpectedHTTPResponse)&lt;br&gt; REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Facility HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 401 Unauthorized&#xD;
+Server: Kestrel&#xD;
+WWW-Authenticate: Bearer&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Wed, 17 Oct 2018 11:11:55 GMT&#xD;
+Content-Length: 0&#xD;
+&#xD;
+</Description>
+                    <Status>failed</Status>
+                    <Timestamp>10/17/2018AND 16:42:22</Timestamp>
+                </Step>
+            </Steps>
+        </Testcase>
+    </Testcases>
+</Reports>

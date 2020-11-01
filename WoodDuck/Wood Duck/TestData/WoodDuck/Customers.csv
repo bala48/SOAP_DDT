@@ -1,0 +1,2 @@
+Row_Index,RunRow,TestScenario_ID,TestScenario_DetailedDescription,UserId,HttpStatus,AliasCode,CustomerId,CustomerTerm,TermId,TermCustomerId
+1,TRUE,WoodDuck_CustomerTest,WoodDuck_CustomerTest2,ireddy,200,IPDALLAS,000986,BREWTON,Math,015242

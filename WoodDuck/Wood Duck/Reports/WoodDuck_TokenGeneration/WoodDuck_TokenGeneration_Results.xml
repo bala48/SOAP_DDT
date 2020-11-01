@@ -1,0 +1,39 @@
+
+<Reports>
+    <TestExecutionSummary>
+        <DateAndTime>10/31/2018,  12:44:51</DateAndTime>
+        <SuiteExecuted>WoodDuck_TokenGeneration</SuiteExecuted>
+        <TestExecuted></TestExecuted>
+        <ServiceEndPoint>&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;</ServiceEndPoint>
+    </TestExecutionSummary>
+    <Testcases>
+        <Testcase>
+            <Name>TokenGeneration</Name>
+            <Description>testcase 1</Description>
+            <Status>finished</Status>
+            <Duration></Duration>
+            <Steps>
+                <Step>
+                    <Name>TokenGeneration - Request 1-</Name>
+                    <Description> REQUEST:POST http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token?username=ireddy&amp;password=Password1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Content-Length: 0&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: text/plain; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Wed, 31 Oct 2018 07:14:24 GMT&#xD;
+&#xD;
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MDk3MDA2NCIsImV4cCI6IjE1NDEwNTY0NjQifQ.r-DLw4Xnm0Z4AJtHWcQxMxjuEVDgXA2wzKun5-WUBB8</Description>
+                    <Status>passed</Status>
+                    <Timestamp>10/31/2018AND 12:44:50</Timestamp>
+                </Step>
+            </Steps>
+        </Testcase>
+    </Testcases>
+</Reports>

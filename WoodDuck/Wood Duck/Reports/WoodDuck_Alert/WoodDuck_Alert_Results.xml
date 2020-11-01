@@ -1,0 +1,208 @@
+
+<Reports>
+    <TestExecutionSummary>
+        <DateAndTime>11/02/2018,  19:00:45</DateAndTime>
+        <SuiteExecuted>WoodDuck_Alert</SuiteExecuted>
+        <TestExecuted></TestExecuted>
+        <ServiceEndPoint>&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;</ServiceEndPoint>
+    </TestExecutionSummary>
+    <Testcases>
+        <Testcase>
+            <Name>WoodDuck_Test</Name>
+            <Description>testcase 1</Description>
+            <Status>failed</Status>
+            <Duration></Duration>
+            <Steps>
+                <Step>
+                    <Name>setup- Iteration 1 WoodDuck_AlertAlert</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:43</Timestamp>
+                </Step>
+                <Step>
+                    <Name>TokenGeneration - Request 1-</Name>
+                    <Description> REQUEST:POST http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token?username=ireddy&amp;password=Password1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Content-Length: 0&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: text/plain; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 13:30:17 GMT&#xD;
+&#xD;
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTQxNyIsImV4cCI6IjE1NDEyNTE4MTcifQ.-TqMS0P-eY7cgCI0v4bKrxzUDUUCGsoTR7wnbGJyvQg</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:43</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_Alert_ByUserId - Request 1-</Name>
+                    <Description> REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/ByUserId/SAJONES HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTQxNyIsImV4cCI6IjE1NDEyNTE4MTcifQ.-TqMS0P-eY7cgCI0v4bKrxzUDUUCGsoTR7wnbGJyvQg&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 13:30:17 GMT&#xD;
+&#xD;
+[{"alertId":1,"userId":"SAJONES","subject":"System Alert_Testing1","priority":"H","body":"Testing the System Alert feature","read":"Y","createdDate":"2018-05-01T10:55:55.697","createdBy":"ADMIN","lastChanged":"2018-11-02T09:29:26.097","lastChangedBy":"ADMIN","isNew":"N","isRevised":"N","activeStatus":"Y"}]</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:43</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_Alert_ById - Request 1-</Name>
+                    <Description> REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTQxNyIsImV4cCI6IjE1NDEyNTE4MTcifQ.-TqMS0P-eY7cgCI0v4bKrxzUDUUCGsoTR7wnbGJyvQg&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 13:30:17 GMT&#xD;
+&#xD;
+{"alertId":1,"userId":"SAJONES","subject":"System Alert_Testing1","priority":"H","body":"Testing the System Alert feature","read":"Y","createdDate":"2018-05-01T10:55:55.697","createdBy":"ADMIN","lastChanged":"2018-11-02T09:29:26.097","lastChangedBy":"ADMIN","isNew":"N","isRevised":"N","activeStatus":"Y"}</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:44</Timestamp>
+                </Step>
+                <Step>
+                    <Name>POST_Alert_New - Request 1-</Name>
+                    <Description> REQUEST:POST http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Authprization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTQxNyIsImV4cCI6IjE1NDEyNTE4MTcifQ.-TqMS0P-eY7cgCI0v4bKrxzUDUUCGsoTR7wnbGJyvQg&#xD;
+Content-Length: 355&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+&#xD;
+{
+   "alertId":3 ,
+   "userId": "SAJONES",
+   "subject": "User",
+   "priority": "H",
+   "body": "Testing the System Alert feature",
+   "read": "Y",
+   "createdDate": "2018-05-01T10:55:55.697",
+   "createdBy": "ireddy",
+   "lastChanged": "2018-09-21T18:41:52.58",
+   "lastChangedBy": "ireddy",
+   "isNew": "Y",
+   "isRevised": "N",
+   "activeStatus": "Y"
+}RESPONSE: HTTP/1.1 401 Unauthorized&#xD;
+Server: Kestrel&#xD;
+WWW-Authenticate: Bearer&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 13:30:17 GMT&#xD;
+Content-Length: 0&#xD;
+&#xD;
+</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:44</Timestamp>
+                </Step>
+                <Step>
+                    <Name>PUT_Alert_ById - Request 1-</Name>
+                    <Description> REQUEST:PUT http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTQxNyIsImV4cCI6IjE1NDEyNTE4MTcifQ.-TqMS0P-eY7cgCI0v4bKrxzUDUUCGsoTR7wnbGJyvQg&#xD;
+Content-Length: 370&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+&#xD;
+{
+   "alertId": 1,
+   "userId": "SAJONES",
+   "subject": "System Alert_Testing1",
+   "priority": "H",
+   "body": "Testing the System Alert feature",
+   "read": "Y",
+   "createdDate": "2018-05-01T10:55:55.697",
+   "createdBy": "ADMIN",
+   "lastChanged": "2018-09-21T18:41:52.58",
+   "lastChangedBy": "ADMIN",
+   "isNew": "N",
+   "isRevised": "N",
+   "activeStatus": "Y"
+}RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 13:30:18 GMT&#xD;
+&#xD;
+{"alertId":1,"userId":"SAJONES","subject":"System Alert_Testing1","priority":"H","body":"Testing the System Alert feature","read":"Y","createdDate":"2018-05-01T10:55:55.697","createdBy":"ADMIN","lastChanged":"2018-09-21T18:41:52.58","lastChangedBy":"ADMIN","isNew":"N","isRevised":"N","activeStatus":"Y"}</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:44</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Teardown-</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:44</Timestamp>
+                </Step>
+                <Step>
+                    <Name>setup- Iteration 2 WoodDuck_AlertAlert_0</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:44</Timestamp>
+                </Step>
+                <Step>
+                    <Name>TokenGeneration - Request 1-</Name>
+                    <Description> REQUEST:POST http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token?username=ireddy&amp;password=Password1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Content-Length: 0&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: text/plain; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 13:30:18 GMT&#xD;
+&#xD;
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTQxOCIsImV4cCI6IjE1NDEyNTE4MTgifQ.bwBYgSmqAjEiApxEO2uijmFMRIMS3KFD-chagn2TDxU</Description>
+                    <Status>passed</Status>
+                    <Timestamp>11/02/2018AND 19:00:44</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Get_Alert_ByUserId - Request 1-</Name>
+                    <Description>[ Script Assertion UserID] assert UserID != null
+       |      |
+       null   false&lt;br&gt; REQUEST:GET http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/ByUserId/Ireddy HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTQxOCIsImV4cCI6IjE1NDEyNTE4MTgifQ.bwBYgSmqAjEiApxEO2uijmFMRIMS3KFD-chagn2TDxU&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 200 OK&#xD;
+Transfer-Encoding: chunked&#xD;
+Content-Type: application/json; charset=utf-8&#xD;
+Server: Kestrel&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 02 Nov 2018 13:30:18 GMT&#xD;
+&#xD;
+[]</Description>
+                    <Status>failed</Status>
+                    <Timestamp>11/02/2018AND 19:00:45</Timestamp>
+                </Step>
+            </Steps>
+        </Testcase>
+    </Testcases>
+</Reports>

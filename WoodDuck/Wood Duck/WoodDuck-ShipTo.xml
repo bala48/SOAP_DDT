@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="be8c5118-114f-4358-8734-4de2c0c5e1b2" activeEnvironment="Default" name="WoodDuck_ShipTo" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="572b5c08-4d87-4b3e-8e24-b01ec0a319fd" wadlVersion="http://wadl.dev.java.net/2009/02" name="POST_ShipTo_New" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="POST_ShipTo_New" path="/dev/sys/api/v${version}/ShipTo" id="a3c1df72-3178-4b80-9390-804a46e24bb1"><con:settings/><con:parameters/><con:method name="POST_ShipTo_New" id="3c20a3b6-6739-4d2a-9221-42760f577cb4" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:ship="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ShipTo">ship:Fault</con:element></con:representation><con:request name="Request 1" id="36cc481b-a8d9-416d-990f-a6b99bc78d33" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+      "customerId": "900453",
+      "shipToId": "693195",
+      "shipToName": "WSI",
+      "shipToAddress1": "12110 GARLAND RD",
+      "shipToAddress2": "",
+      "shipToAddress3": "",
+      "shipToCity": "DALLAS",
+      "shipToState": "TX",
+      "shipToPostalCode": "75218",
+      "shipToCountryCode": "USA",
+      "shipToCountyName": "DALLAS",
+      "comments": "**Hours Mon-Fri 7:30 am-2:30 pm",
+      "shipMode": "T",
+      "priceZone": "",
+      "storeNumber": "",
+      "splcCode": null,
+      "contactName": "Receiving",
+      "contactPhone": "214-660-8820",
+      "lastChanged": "2013-04-01T09:26:45.423",
+      "lastChangedBy": "JCOOLEY",
+      "createdDate": "2013-04-01T09:26:59.473",
+      "createdBy": "JCOOLEY",
+      "isNew": "Y",
+      "isRevised": "N",
+      "activeStatus": "Y"
+   }</con:request><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="b31ae15e-eca3-40ae-875d-5de904a5a2bf" wadlVersion="http://wadl.dev.java.net/2009/02" name="Get_ListOfShipTo_ByCustomerId" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="Get_ListOfShipTo_ByCustomerId" path="/dev/sys/api/v${version}/ShipTo/ByCustomerId/${#TestCase#ShipToCustomerId}" id="8d9bdf2c-2f5d-41ea-85fe-ad029265c8f1"><con:settings/><con:parameters/><con:method name="Get_ListOfShipTo_ByCustomerId" id="ca66e674-f87b-4777-b0d4-dfa6c901d3cc" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="79b65f27-943f-4869-9cf0-6e5f0ec27e0f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="37d62de8-3bd3-4d6e-8879-a315be00b4eb" wadlVersion="http://wadl.dev.java.net/2009/02" name="Get_ListOfShipTo_ByStoreNo" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="Get_ListOfShipTo_ByStoreNo" path="/dev/sys/api/v${version}/ShipTo/ByStoreNumber/703323" id="b237acb8-9437-4ae6-ad62-0836fe3c29d1"><con:settings/><con:parameters/><con:method name="Get_ListOfShipTo_ByStoreNo" id="b9c28e5b-8ec0-4a8c-a206-aa18f1a5a6ec" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="2db0f02a-c5d1-4447-aec8-8a07da9a7120" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="367330bd-e10a-42cb-b511-b8a6fee4536f" wadlVersion="http://wadl.dev.java.net/2009/02" name="Get_SpecificShipTo_ById" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="Get_SpecificShipTo_ById" path="/dev/sys/api/v${version}/ShipTo/${#TestCase#ShipToCodeId}" id="03015baa-398f-40c0-a882-3d469c10d0d4"><con:settings/><con:parameters/><con:method name="Get_SpecificShipTo_ById" id="d0d2de22-51a9-438e-85fd-ffd780b07e12" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ShipTo/1">ns:Response</con:element></con:representation><con:request name="Request 1" id="e80fba7f-b812-4aba-902a-8cff4f8d6c68" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="aded1c61-f142-441c-a669-d74fe2c527fa" wadlVersion="http://wadl.dev.java.net/2009/02" name="PUT_ShipTo_ById" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="PUT_ShipTo_ById" path="/dev/sys/api/v${version}/ShipTo/${#TestCase#ShipToCustomerId}" id="fbf7ae4c-dff8-4c98-bfa8-938dc3617104"><con:settings/><con:parameters/><con:method name="PUT_ShipTo_ById" id="5db18d58-a828-4490-a55d-41e3acda6a0d" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:ns="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ShipTo/900453">ns:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="69c42545-1744-4cfb-9b58-2753a5981486" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+      "customerId": "900453",
+      "shipToId": "693195",
+      "shipToName": "WSIdata",
+      "shipToAddress1": "12110 GARLAND RD",
+      "shipToAddress2": "",
+      "shipToAddress3": "",
+      "shipToCity": "DALLAS",
+      "shipToState": "TX",
+      "shipToPostalCode": "75218",
+      "shipToCountryCode": "USA",
+      "shipToCountyName": "DALLAS",
+      "comments": "**Hours Mon-Fri 7:30 am-2:30 pm",
+      "shipMode": "T",
+      "priceZone": "",
+      "storeNumber": "",
+      "splcCode": null,
+      "contactName": "Receiving",
+      "contactPhone": "214-660-8820",
+      "lastChanged": "2013-04-01T09:26:45.423",
+      "lastChangedBy": "JCOOLEY",
+      "createdDate": "2013-04-01T09:26:59.473",
+      "createdBy": "JCOOLEY",
+      "isNew": "Y",
+      "isRevised": "N",
+      "activeStatus": "Y"
+   }</con:request><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="1e3a824b-07b5-4366-bf20-41948020f0bc" wadlVersion="http://wadl.dev.java.net/2009/02" name="TokenGeneration" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="TokenGeneration" path="/dev/sys/api/v${version}/Token" id="cdd42b19-d514-490b-8524-5c72d8f1e1c3"><con:settings/><con:parameters><con:parameter><con:name>username</con:name><con:value>ire=d</con:value><con:style>QUERY</con:style><con:default>ire=d</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>password</con:name><con:value>w</con:value><con:style>QUERY</con:style><con:default>w</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="TokenGeneration" id="d776f96d-aa8a-4c2b-a030-c5186cd55e17" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="5e987b31-963b-4eba-925e-35bafc19a028" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${Password}"/>
+  <con:entry key="username" value="${UserName}"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="1b078650-a933-41a6-9025-105befe4a6ae" name="WoodDuck_ShipTo"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="6c08f721-e423-47c4-9a5f-e2d50902464f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WoodDuck_ShipToTest" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Setup" id="5b5e31d3-999c-4692-925c-fbdd8629fdf8">
+        <con:settings/>
+        <con:config><script>/**
+* TestCase Setup Step 
+* 
+* @author  Cigniti
+*/
+
+context.script.execute()</script></con:config>
+      </con:testStep><con:testStep type="restrequest" name="TokenGeneration - Request 1" id="8f67e6a6-7f17-480b-b841-bcb6f5791a1e"><con:settings/><con:config service="TokenGeneration" resourcePath="/dev/sys/api/v${version}/Token" methodName="TokenGeneration" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TokenGeneration - Request 1" id="5e987b31-963b-4eba-925e-35bafc19a028" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token</con:originalUri><con:assertion type="GroovyScriptAssertion" id="0d60478d-fd91-4c6e-baa0-1424a5d7e606" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="21b79430-980f-476c-bbb9-e92e43b35bd0" name="CaptureToken"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+
+def Token = response
+assert Token != null
+context.testCase.setPropertyValue("token", Token)
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${Password}"/>
+  <con:entry key="username" value="${UserName}"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_ListOfShipTo_ByCustomerId - Request 1" id="2a806f72-d120-425f-bd46-e0e719b4d40b"><con:settings/><con:config service="Get_ListOfShipTo_ByCustomerId" resourcePath="/dev/sys/api/v${version}/ShipTo/ByCustomerId/${#TestCase#ShipToCustomerId}" methodName="Get_ListOfShipTo_ByCustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_ListOfShipTo_ByCustomerId - Request 1" id="79b65f27-943f-4869-9cf0-6e5f0ec27e0f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ShipTo/ByCustomerId/1</con:originalUri><con:assertion type="GroovyScriptAssertion" id="f6157e8f-ef37-48d6-a51b-cd57b1a89e86" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="3f269923-1c83-476b-af9b-d72ed8df2caf" name="Script Assertion - ShipToCustomerId"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+def jsonResponse = new JsonSlurper().parseText(response)
+
+def CustomerID = jsonResponse.customerId[0]
+assert CustomerID != null
+
+context.testCase.setPropertyValue("ActCustomerID", CustomerID.toString())
+
+def ActualShipToCustomerID = context.testCase.getPropertyValue("ActCustomerID")
+
+def ExpectedShipToCustomerID = context.expand('${#TestCase#ShipToCustomerId}')
+
+assert ExpectedShipToCustomerID.equals(ActualShipToCustomerID)
+//assert ExpecteduserID.equals(UserID.toString())</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_ListOfShipTo_ByStoreNo - Request 1" id="45e875f4-3ed1-4110-8aa3-5c111e25ac7a"><con:settings/><con:config service="Get_ListOfShipTo_ByStoreNo" resourcePath="/dev/sys/api/v${version}/ShipTo/ByStoreNumber/703323" methodName="Get_ListOfShipTo_ByStoreNo" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_ListOfShipTo_ByStoreNo - Request 1" id="2db0f02a-c5d1-4447-aec8-8a07da9a7120" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ShipTo/ByStoreNumber/</con:originalUri><con:assertion type="GroovyScriptAssertion" id="dce902d5-c9d8-42ed-b588-3b27f785dd66" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_SpecificShipTo_ById - Request 1" id="327f0e06-9c5e-40bf-8267-db18ef12f985"><con:settings/><con:config service="Get_SpecificShipTo_ById" resourcePath="/dev/sys/api/v${version}/ShipTo/${#TestCase#ShipToCodeId}" methodName="Get_SpecificShipTo_ById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_SpecificShipTo_ById - Request 1" id="e80fba7f-b812-4aba-902a-8cff4f8d6c68" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ShipTo/1</con:originalUri><con:assertion type="GroovyScriptAssertion" id="e66ef877-03dd-43fc-b292-a96af951fc75" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="a30ad431-a6c9-4aa2-a85d-8ba493a94f09" name="Script Assertion -ShipToId"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+def jsonResponse = new JsonSlurper().parseText(response)
+
+def ShipToCodeIdNum = jsonResponse.shipToId
+assert ShipToCodeIdNum != null
+
+context.testCase.setPropertyValue("ActShipToCodeIdNum", ShipToCodeIdNum.toString())
+
+def ActualShipToCodeIdNum = context.testCase.getPropertyValue("ActShipToCodeIdNum")
+
+def ExpectedShipToCodeIdNum = context.expand('${#TestCase#ShipToCodeId}')
+
+assert ExpectedShipToCodeIdNum.equals(ActualShipToCodeIdNum)
+//assert ExpecteduserID.equals(UserID.toString())</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="POST_ShipTo_New - Request 1" id="689e26ef-a66c-405f-aa3e-8fa90a92fb7b"><con:settings/><con:config service="POST_ShipTo_New" resourcePath="/dev/sys/api/v${version}/ShipTo" methodName="POST_ShipTo_New" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST_ShipTo_New - Request 1" id="36cc481b-a8d9-416d-990f-a6b99bc78d33" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+      "customerId": "900453",
+      "shipToId": "693195",
+      "shipToName": "WSI",
+      "shipToAddress1": "12110 GARLAND RD",
+      "shipToAddress2": "",
+      "shipToAddress3": "",
+      "shipToCity": "DALLAS",
+      "shipToState": "TX",
+      "shipToPostalCode": "75218",
+      "shipToCountryCode": "USA",
+      "shipToCountyName": "DALLAS",
+      "comments": "**Hours Mon-Fri 7:30 am-2:30 pm",
+      "shipMode": "T",
+      "priceZone": "",
+      "storeNumber": "",
+      "splcCode": null,
+      "contactName": "Receiving",
+      "contactPhone": "214-660-8820",
+      "lastChanged": "2013-04-01T09:26:45.423",
+      "lastChangedBy": "JCOOLEY",
+      "createdDate": "2013-04-01T09:26:59.473",
+      "createdBy": "JCOOLEY",
+      "isNew": "Y",
+      "isRevised": "N",
+      "activeStatus": "Y"
+   }</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ShipTo</con:originalUri><con:assertion type="GroovyScriptAssertion" id="ab81919f-bd52-4405-8fb4-1d0f974b8f30" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PUT_ShipTo_ById - Request 1" id="183d6077-7d98-4bad-9a17-8c3b00fc00b0"><con:settings/><con:config service="PUT_ShipTo_ById" resourcePath="/dev/sys/api/v${version}/ShipTo/${#TestCase#ShipToCustomerId}" methodName="PUT_ShipTo_ById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT_ShipTo_ById - Request 1" id="69c42545-1744-4cfb-9b58-2753a5981486" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+      "customerId": "900453",
+      "shipToId": "693195",
+      "shipToName": "WSI",
+      "shipToAddress1": "12110 GARLAND RD",
+      "shipToAddress2": "",
+      "shipToAddress3": "",
+      "shipToCity": "DALLAS",
+      "shipToState": "TX",
+      "shipToPostalCode": "75218",
+      "shipToCountryCode": "USA",
+      "shipToCountyName": "DALLAS",
+      "comments": "**Hours Mon-Fri 7:30 am-2:30 pm",
+      "shipMode": "T",
+      "priceZone": "",
+      "storeNumber": "",
+      "splcCode": null,
+      "contactName": "Receiving",
+      "contactPhone": "214-660-8820",
+      "lastChanged": "2013-04-01T09:26:45.423",
+      "lastChangedBy": "JCOOLEY",
+      "createdDate": "2013-04-01T09:26:59.473",
+      "createdBy": "JCOOLEY",
+      "isNew": "Y",
+      "isRevised": "N",
+      "activeStatus": "Y"
+   }</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ShipTo/900453</con:originalUri><con:assertion type="GroovyScriptAssertion" id="9b9cd0d3-9bb5-456a-9d5f-0205e5125de3" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Teardown" id="b38aebcb-7607-4d73-a5e5-24719f10e316">
+        <con:settings/>
+        <con:config>
+          <script>/**
+* TestCase Teardown Step 
+* 
+* @author  Cigniti
+*/
+
+if(context.i == null){
+	context.i = 1
+}
+
+context.script.report("Test Request","Your Custom Message Goes Here" + context.i)
+context.i = context.i + 1
+
+context.script.loop()</script>
+        </con:config>
+      </con:testStep><con:setupScript>import groovy.util.GroovyScriptEngine
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+context.projectPath = groovyUtils.projectPath
+context.gse = new GroovyScriptEngine(context.projectPath + "/scripts/")
+scritpLoader = context.gse.loadScriptByName("TestCaseScripts.groovy")
+context.script = scritpLoader.newInstance(context)</con:setupScript><con:properties><con:property><con:name>token</con:name><con:value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTc5MiIsImV4cCI6IjE1NDEyNTIxOTIifQ.hamjeKkcG9r_Xt27dYQoo26XpTghCgwMRPTRVtHSeu4</con:value></con:property><con:property><con:name>dataHolder</con:name><con:value>rO0ABXNyACNjb20uY2lnbml0aS5zb2FwLnVpLmNvcmUuRGF0YU1hcHBlcgAAAAAAAAABAgAESQAKZGVmYXVsdFJvd1sADGFyckNvbnRhaW5lcnQAFFtbTGphdmEvbGFuZy9TdHJpbmc7TAANZGF0YUNvbnRhaW5lcnQAD0xqYXZhL3V0aWwvTWFwO0wAB3Jvd0RhdGF0ABBMamF2YS91dGlsL0xpc3Q7eHAAAAAAdXIAFFtbTGphdmEubGFuZy5TdHJpbmc7Mk0JrYQy5FcCAAB4cAAAAAJ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAJdAAJUm93X0luZGV4dAAGUnVuUm93dAAPVGVzdFNjZW5hcmlvX0lEdAAgVGVzdFNjZW5hcmlvX0RldGFpbGVkRGVzY3JpcHRpb250AAZVc2VySWR0AAdBbGVydElkdAAKSHR0cFN0YXR1c3QADFNoaXBUb0NvZGVJZHQAEFNoaXBUb0N1c3RvbWVySWR1cQB+AAcAAAAJdAABMXQABFRSVUV0ABNXb29kRHVja19TaGlwVG9UZXN0dAAUV29vZER1Y2tfU2hpcFRvVGVzdDF0AAdTQUpPTkVTdAABMXQAAzIwMHQABjcwOTk2OHQABjkwMDQ1M3NyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAAJcQB+AAtzcgATamF2YS51dGlsLkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAXcEAAAAAXEAfgAVeHEAfgAOc3EAfgAeAAAAAXcEAAAAAXEAfgAYeHEAfgAJc3EAfgAeAAAAAXcEAAAAAXEAfgATeHEAfgAPc3EAfgAeAAAAAXcEAAAAAXEAfgAZeHEAfgAMc3EAfgAeAAAAAXcEAAAAAXEAfgAWeHEAfgANc3EAfgAeAAAAAXcEAAAAAXEAfgAXeHEAfgAQc3EAfgAeAAAAAXcEAAAAAXEAfgAaeHEAfgAKc3EAfgAeAAAAAXcEAAAAAXEAfgAUeHEAfgARc3EAfgAeAAAAAXcEAAAAAXEAfgAbeHhw</con:value></con:property><con:property><con:name>loopCounter</con:name><con:value>1</con:value></con:property><con:property><con:name>TestScenario_ID</con:name><con:value>WoodDuck_ShipToTest</con:value></con:property><con:property><con:name>AlertId</con:name><con:value>1</con:value></con:property><con:property><con:name>Row_Index</con:name><con:value>1</con:value></con:property><con:property><con:name>HttpStatus</con:name><con:value>200</con:value></con:property><con:property><con:name>TestScenario_DetailedDescription</con:name><con:value>WoodDuck_ShipToTest1</con:value></con:property><con:property><con:name>UserId</con:name><con:value>SAJONES</con:value></con:property><con:property><con:name>postalCodeId</con:name><con:value>210</con:value></con:property><con:property><con:name>CityCodeId</con:name><con:value>PORTSMOUTH</con:value></con:property><con:property><con:name>RunRow</con:name><con:value>TRUE</con:value></con:property><con:property><con:name>iterationDescription1</con:name><con:value>WoodDuck_ShipToTest1</con:value></con:property><con:property><con:name>ShipToId</con:name><con:value>709968</con:value></con:property><con:property><con:name>ShipToCustomerId</con:name><con:value>900453</con:value></con:property><con:property><con:name>ActUserId</con:name><con:value>900453</con:value></con:property><con:property><con:name>ActCustomerID</con:name><con:value>900453</con:value></con:property><con:property><con:name>ActShipToCodeIdNum</con:name><con:value>709968</con:value></con:property><con:property><con:name>ShipToCodeId</con:name><con:value>709968</con:value></con:property></con:properties></con:testCase><con:properties/><con:setupScript>import groovy.util.GroovyScriptEngine
+
+/**
+* TestSuite Setup 
+* 
+* @author  Cigniti
+*/
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+context.projectPath = groovyUtils.projectPath
+context.gse = new GroovyScriptEngine(context.projectPath + "/scripts/")</con:setupScript><con:tearDownScript>/**
+* TestSuite Teardown 
+* 
+* @author  Cigniti
+*/
+
+def reportClass = com.cigniti.soap.ui.core.report.Reporter
+scriptLoader = context.gse.loadScriptByName("TestSuiteTearDown.groovy")
+script = scriptLoader.newInstance(context.projectPath,context,reportClass)
+script.publishReports()
+
+//Write script logs to a file - TestSuiteRunListener.afterRun
+
+def logArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("script log")
+
+//## Get TestSuite name ##//
+//def TSName = testRunner.testCase.testSuite.name
+def TSName = this.testDataHolder
+
+//Get LogFile directory and Construct LogFile
+//def FileName = TSName + "-Logs.txt"
+def LogFilePath = context.expand('${#Project#TestReportPath}')
+def FileName = TSName + "-Logs" + ((int)(Math.random()*10000)) + ".txt"
+FileName = LogFilePath + FileName
+
+def LogFile = new File(FileName)
+
+log.info "Generating Script logs....\r\n" + FileName
+
+LogFile.createNewFile()
+LogFile.write("Generating Script logs....\r\n")
+
+if(logArea !=null)
+{
+def model = logArea.model
+	if(model.size > 0) {
+		for(c in 0..(model.size-1))
+		{
+			LogFile.append(model.getElementAt(c).toString() + "\r\n")
+		}
+	}
+}</con:tearDownScript></con:testSuite><con:properties><con:property><con:name>Alert</con:name><con:value>rO0ABXNyACNjb20uY2lnbml0aS5zb2FwLnVpLmNvcmUuRGF0YU1hcHBlcgAAAAAAAAABAgAESQAKZGVmYXVsdFJvd1sADGFyckNvbnRhaW5lcnQAFFtbTGphdmEvbGFuZy9TdHJpbmc7TAANZGF0YUNvbnRhaW5lcnQAD0xqYXZhL3V0aWwvTWFwO0wAB3Jvd0RhdGF0ABBMamF2YS91dGlsL0xpc3Q7eHAAAAAAdXIAFFtbTGphdmEubGFuZy5TdHJpbmc7Mk0JrYQy5FcCAAB4cAAAAAN1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAIdAAJUm93X0luZGV4dAAGUnVuUm93dAAPVGVzdFNjZW5hcmlvX0lEdAAgVGVzdFNjZW5hcmlvX0RldGFpbGVkRGVzY3JpcHRpb250AAZVc2VySWR0AAdBbGVydElkdAAKSHR0cFN0YXR1c3QAB3N1YmplY3R1cQB+AAcAAAAIdAABMXQABFRSVUV0AA1Xb29kRHVja19UZXN0dAATV29vZER1Y2tfQWxlcnRBbGVydHQAB1NBSk9ORVN0AAExdAADMjAwdAAVU3lzdGVtIEFsZXJ0X1Rlc3RpbmcxdXEAfgAHAAAACHQAATJ0AARUUlVFdAANV29vZER1Y2tfVGVzdHQAFVdvb2REdWNrX0FsZXJ0QWxlcnRfMHQABklyZWRkeXQAATF0AAMyMDB0ABZTeXN0ZW0gQWxlcnRfVGVzdGluZzEyc3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA/QAAAAAAADHcIAAAAEAAAAAhxAH4AC3NyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAACdwQAAAACcQB+ABRxAH4AHXhxAH4ADnNxAH4AJQAAAAJ3BAAAAAJxAH4AF3EAfgAgeHEAfgAJc3EAfgAlAAAAAncEAAAAAnEAfgAScQB+ABt4cQB+AA9zcQB+ACUAAAACdwQAAAACcQB+ABhxAH4AIXhxAH4ADHNxAH4AJQAAAAJ3BAAAAAJxAH4AFXEAfgAeeHEAfgANc3EAfgAlAAAAAncEAAAAAnEAfgAWcQB+AB94cQB+ABBzcQB+ACUAAAACdwQAAAACcQB+ABlxAH4AInhxAH4ACnNxAH4AJQAAAAJ3BAAAAAJxAH4AE3EAfgAceHhzcQB+ACUAAAADdwQAAAADcQB+AAhxAH4AEXEAfgAaeA==</con:value></con:property><con:property><con:name>TestReportPath</con:name><con:value>C:\SOAP_POC_Georgia_Pacific\WoodDuck\Wood Duck/log/WoodDuck/ShipTo/</con:value></con:property><con:property><con:name>WoodDuck_Alert</con:name><con:value>rO0ABXNyACNjb20uY2lnbml0aS5zb2FwLnVpLmNvcmUuRGF0YU1hcHBlcgAAAAAAAAABAgAESQAKZGVmYXVsdFJvd1sADGFyckNvbnRhaW5lcnQAFFtbTGphdmEvbGFuZy9TdHJpbmc7TAANZGF0YUNvbnRhaW5lcnQAD0xqYXZhL3V0aWwvTWFwO0wAB3Jvd0RhdGF0ABBMamF2YS91dGlsL0xpc3Q7eHAAAAAAdXIAFFtbTGphdmEubGFuZy5TdHJpbmc7Mk0JrYQy5FcCAAB4cAAAAAJ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAJdAAJUm93X0luZGV4dAAGUnVuUm93dAAPVGVzdFNjZW5hcmlvX0lEdAAgVGVzdFNjZW5hcmlvX0RldGFpbGVkRGVzY3JpcHRpb250AAZVc2VySWR0AAdBbGVydElkdAAKSHR0cFN0YXR1c3QADHBvc3RhbENvZGVJZHQACkNpdHlDb2RlSWR1cQB+AAcAAAAJdAABMXQABFRSVUV0ABNXb29kRHVja19TaGlwVG9UZXN0dAAUV29vZER1Y2tfU2hpcFRvVGVzdDF0AAdTQUpPTkVTdAABMXQAAzIwMHQAAzIxMHQAClBPUlRTTU9VVEhzcgARamF2YS51dGlsLkhhc2hNYXAFB9rBwxZg0QMAAkYACmxvYWRGYWN0b3JJAAl0aHJlc2hvbGR4cD9AAAAAAAAMdwgAAAAQAAAACXEAfgALc3IAE2phdmEudXRpbC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAF3BAAAAAFxAH4AFXhxAH4ADnNxAH4AHgAAAAF3BAAAAAFxAH4AGHhxAH4ACXNxAH4AHgAAAAF3BAAAAAFxAH4AE3hxAH4AD3NxAH4AHgAAAAF3BAAAAAFxAH4AGXhxAH4ADHNxAH4AHgAAAAF3BAAAAAFxAH4AFnhxAH4ADXNxAH4AHgAAAAF3BAAAAAFxAH4AF3hxAH4AEHNxAH4AHgAAAAF3BAAAAAFxAH4AGnhxAH4AEXNxAH4AHgAAAAF3BAAAAAFxAH4AG3hxAH4ACnNxAH4AHgAAAAF3BAAAAAFxAH4AFHh4c3EAfgAeAAAAAncEAAAAAnEAfgAIcQB+ABJ4</con:value></con:property><con:property><con:name>WoodDuck_ShipTo</con:name><con:value>rO0ABXNyACNjb20uY2lnbml0aS5zb2FwLnVpLmNvcmUuRGF0YU1hcHBlcgAAAAAAAAABAgAESQAKZGVmYXVsdFJvd1sADGFyckNvbnRhaW5lcnQAFFtbTGphdmEvbGFuZy9TdHJpbmc7TAANZGF0YUNvbnRhaW5lcnQAD0xqYXZhL3V0aWwvTWFwO0wAB3Jvd0RhdGF0ABBMamF2YS91dGlsL0xpc3Q7eHAAAAAAdXIAFFtbTGphdmEubGFuZy5TdHJpbmc7Mk0JrYQy5FcCAAB4cAAAAAJ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAJdAAJUm93X0luZGV4dAAGUnVuUm93dAAPVGVzdFNjZW5hcmlvX0lEdAAgVGVzdFNjZW5hcmlvX0RldGFpbGVkRGVzY3JpcHRpb250AAZVc2VySWR0AAdBbGVydElkdAAKSHR0cFN0YXR1c3QADFNoaXBUb0NvZGVJZHQAEFNoaXBUb0N1c3RvbWVySWR1cQB+AAcAAAAJdAABMXQABFRSVUV0ABNXb29kRHVja19TaGlwVG9UZXN0dAAUV29vZER1Y2tfU2hpcFRvVGVzdDF0AAdTQUpPTkVTdAABMXQAAzIwMHQABjcwOTk2OHQABjkwMDQ1M3NyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAAJcQB+AAtzcgATamF2YS51dGlsLkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAXcEAAAAAXEAfgAVeHEAfgAOc3EAfgAeAAAAAXcEAAAAAXEAfgAYeHEAfgAJc3EAfgAeAAAAAXcEAAAAAXEAfgATeHEAfgAPc3EAfgAeAAAAAXcEAAAAAXEAfgAZeHEAfgAMc3EAfgAeAAAAAXcEAAAAAXEAfgAWeHEAfgANc3EAfgAeAAAAAXcEAAAAAXEAfgAXeHEAfgAQc3EAfgAeAAAAAXcEAAAAAXEAfgAaeHEAfgAKc3EAfgAeAAAAAXcEAAAAAXEAfgAUeHEAfgARc3EAfgAeAAAAAXcEAAAAAXEAfgAbeHhzcQB+AB4AAAACdwQAAAACcQB+AAhxAH4AEng=</con:value></con:property></con:properties><con:afterLoadScript>import com.cigniti.soap.ui.core.DataMapper;
+import java.io.File;
+/**
+ * Project Setup
+ *
+ * @author  Cigniti
+ */
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectPath = groovyUtils.projectPath
+
+if(new File(projectPath+ "/log/WoodDuck/ShipTo").exists()){
+log.info "log directory already exist..."
+}else if(new File(projectPath+ "/log").exists()){
+new File((projectPath+ "/log/WoodDuck/ShipTo")).mkdir();
+log.info "log directory created..."
+}else if(new File(projectPath).exists()){
+new File((projectPath+ "/log")).mkdir();
+new File((projectPath+ "/log/WoodDuck/ShipTo")).mkdir();
+log.info "log directory created..."
+}
+
+project.setPropertyValue("TestReportPath", projectPath+ "/log/WoodDuck/ShipTo/")
+
+def alert = new DataMapper().importData(projectPath+ "/TestData/WoodDuck/ShipTo.csv");
+
+project.setPropertyValue("WoodDuck_ShipTo",alert.preserveState())
+
+def testSuites=project.testSuiteList
+for(testSuite in testSuites) {
+testCases=testSuite.testCaseList
+for(testCase in testCases) {
+testCase.setPropertyValue("dataHolder","")
+testCase.setPropertyValue("loopCounter","1")
+}
+}
+
+</con:afterLoadScript><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

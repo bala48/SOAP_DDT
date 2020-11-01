@@ -1,0 +1,39 @@
+
+<Reports>
+    <TestExecutionSummary>
+        <DateAndTime>10/26/2018,  19:29:18</DateAndTime>
+        <SuiteExecuted>TestSuite 1</SuiteExecuted>
+        <TestExecuted></TestExecuted>
+        <ServiceEndPoint>&lt;br&gt;http://nextapiqa.srv.gapac.com&lt;br&gt;</ServiceEndPoint>
+    </TestExecutionSummary>
+    <Testcases>
+        <Testcase>
+            <Name>TestCase 1</Name>
+            <Description>testcase 1</Description>
+            <Status>finished</Status>
+            <Duration></Duration>
+            <Steps>
+                <Step>
+                    <Name>Token 1 - Request 1-</Name>
+                    <Description> REQUEST:POST http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Task/CloseTask/1?username=ireddy&amp;password=Password1 HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+Content-Length: 0&#xD;
+Host: nextapiqa.srv.gapac.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+RESPONSE: HTTP/1.1 401 Unauthorized&#xD;
+Server: Kestrel&#xD;
+WWW-Authenticate: Bearer&#xD;
+X-Powered-By: ASP.NET&#xD;
+Date: Fri, 26 Oct 2018 13:58:52 GMT&#xD;
+Content-Length: 0&#xD;
+&#xD;
+</Description>
+                    <Status>passed</Status>
+                    <Timestamp>10/26/2018AND 19:29:17</Timestamp>
+                </Step>
+            </Steps>
+        </Testcase>
+    </Testcases>
+</Reports>

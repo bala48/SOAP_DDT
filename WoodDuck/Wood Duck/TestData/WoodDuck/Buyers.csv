@@ -1,0 +1,2 @@
+Row_Index,RunRow,TestScenario_ID,TestScenario_DetailedDescription,UserId,HttpStatus,BuyerId,CustomerId,TermId,TermCustomerId
+1,TRUE,WoodDuck_BuyersTest,WoodDuck_BuyersBuyers,ireddy,200,LMATHYS,900453,Math,15242

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="592eb1d3-a502-4519-9333-f6ddc205912d" activeEnvironment="Default" name="REST Project 1" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="1e11533e-f6fe-4b22-ae53-7bde0df0868f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://nextapiqa.srv.gapac.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="Token" path="/dev/sys/api/v1/Task/CloseTask/1" id="0ed7e1b8-9b08-4187-ba43-78bdec03c76f"><con:settings/><con:parameters><con:parameter><con:name>username</con:name><con:value>ireddy</con:value><con:style>QUERY</con:style><con:default>ireddy</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>password</con:name><con:value>Password1</con:value><con:style>QUERY</con:style><con:default>Password1</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>version</con:name><con:style>TEMPLATE</con:style></con:parameter><con:parameter><con:name>id</con:name><con:style>TEMPLATE</con:style></con:parameter></con:parameters><con:method name="Token 1" id="3a34c214-de02-495d-98fc-fa5fe39846e7" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:tok="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token">tok:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:tok="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token">tok:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="eb508732-7b59-4fdd-8e14-2a8f89d34f8e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MDQ3NjQwMCIsImV4cCI6IjE1NDA1NjI4MDAifQ.KL1IUDK2GelpqoElsIgaIvAdMGHUdwPZRiXnqbW5PQ8" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint><con:request>{
+  "updatedByUserId": "SCLDD"
+}</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token</con:originalUri><con:credentials><con:username>ireddy</con:username><con:password>Password1</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="Password1"/>
+  <con:entry key="username" value="ireddy"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry><con:entry>version</con:entry><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="edc545c8-bf88-4bf7-95fb-177e91fc22d2" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f0199be1-e9cd-4827-8b35-233f3ada4de4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Token 1 - Request 1" id="2b3bd88f-3f5c-43f8-8095-a7a7f8fc6567"><con:settings/><con:config service="http://nextapiqa.srv.gapac.com" resourcePath="/dev/sys/api/v1/Task/CloseTask/1" methodName="Token 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Token 1 - Request 1" id="eb508732-7b59-4fdd-8e14-2a8f89d34f8e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token</con:originalUri><con:assertion type="GroovyScriptAssertion" id="25798694-6ff7-4311-93b9-0599f88f6d89" name="Script Assertion"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="Password1"/>
+  <con:entry key="username" value="ireddy"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry><con:entry>version</con:entry><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>dataHolder</con:name><con:value/></con:property><con:property><con:name>loopCounter</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:properties/><con:setupScript>import groovy.util.GroovyScriptEngine
+
+/**
+* TestSuite Setup 
+* 
+* @author  Cigniti
+*/
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+context.projectPath = groovyUtils.projectPath
+context.gse = new GroovyScriptEngine(context.projectPath + "/scripts/")</con:setupScript><con:tearDownScript>/**
+* TestSuite Teardown 
+* 
+* @author  Cigniti
+*/
+
+def reportClass = com.cigniti.soap.ui.core.report.Reporter
+scriptLoader = context.gse.loadScriptByName("TestSuiteTearDown.groovy")
+script = scriptLoader.newInstance(context.projectPath,context,reportClass)
+script.publishReports()
+
+//Write script logs to a file - TestSuiteRunListener.afterRun
+
+def logArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("script log")
+
+//## Get TestSuite name ##//
+//def TSName = testRunner.testCase.testSuite.name
+def TSName = this.testDataHolder
+
+//Get LogFile directory and Construct LogFile
+//def FileName = TSName + "-Logs.txt"
+def LogFilePath = context.expand('${#Project#TestReportPath}')
+def FileName = TSName + "-Logs" + ((int)(Math.random()*10000)) + ".txt"
+FileName = LogFilePath + FileName
+
+def LogFile = new File(FileName)
+
+log.info "Generating Script logs....\r\n" + FileName
+
+LogFile.createNewFile()
+LogFile.write("Generating Script logs....\r\n")
+
+if(logArea !=null)
+{
+def model = logArea.model
+	if(model.size > 0) {
+		for(c in 0..(model.size-1))
+		{
+			LogFile.append(model.getElementAt(c).toString() + "\r\n")
+		}
+	}
+}</con:tearDownScript></con:testSuite><con:properties/><con:afterLoadScript>import com.cigniti.soap.ui.core.DataMapper;
+import java.io.File;
+
+/**
+ * Project Setup
+ *
+ * @author  Cigniti
+ */
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectPath = groovyUtils.projectPath
+
+//def muleHeaderPositiveData = new DataMapper().importData(projectPath+ "/TestData/AMS/CCS/MuleHeaderPositiveTests.csv");
+
+//project.setPropertyValue("MuleHeaderPositiveTests",muleHeaderPositiveData.preserveState())
+
+
+
+def testSuites=project.testSuiteList
+for(testSuite in testSuites) {
+	testCases=testSuite.testCaseList
+	
+	for(testCase in testCases) {
+		testCase.setPropertyValue("dataHolder","")
+		testCase.setPropertyValue("loopCounter","1")
+	}
+}</con:afterLoadScript><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

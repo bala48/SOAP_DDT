@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="bf4ab592-39d5-4a04-b01a-34161300494a" activeEnvironment="Default" name="WoodDuck_ProductLockStatus" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="428d81d0-1105-4294-aa56-14dd856d0b7d" wadlVersion="http://wadl.dev.java.net/2009/02" name="PUT_ProductLockStatus" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="PUT_ProductLockStatus" path="/dev/sys/api/v${version}/ProductLockStatus" id="b20f907e-637e-4ad4-933e-7de17a2c162c"><con:settings/><con:parameters/><con:method name="PUT_ProductLockStatus" id="f04703f5-5918-4b05-8401-d5fd337bf3e6" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="eb62f5d3-e77f-49ae-8537-6e38366bb04c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+  "productId": "720512",
+  "attributeGroupId": "gfv",
+  "facilityId": "125",
+  "schedWeek": "2018-10-24T11:56:19.078Z",
+  "lockStatus": "false",
+  "lockedBy": "ireddy",
+  "lockedDate": "2018-10-24T11:56:19.078Z"
+}</con:request><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="2cd883cf-45ff-442e-93e9-5074b9434889" wadlVersion="http://wadl.dev.java.net/2009/02" name="TokenGeneration" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="TokenGeneration" path="/dev/sys/api/v${version}/Token" id="0f8a1d3d-dcd4-4d18-9c19-2e8c5f72f991"><con:settings/><con:parameters><con:parameter><con:name>username</con:name><con:value>ire=d</con:value><con:style>QUERY</con:style><con:default>ire=d</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>password</con:name><con:value>w</con:value><con:style>QUERY</con:style><con:default>w</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="TokenGeneration" id="ae9e65b9-8028-45db-80ba-c06e942b7236" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="559d0d58-9575-4f31-9504-f74cea2e9e8f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${Password}"/>
+  <con:entry key="username" value="${UserName}"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="f6c6cc3f-1dc9-4a4b-bad5-041f55ce0b7c" name="WoodDuck_ProductLockStatus"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="6f02e669-f8be-4904-9bb0-375b695532c2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WoodDuck_ProductLockStatus" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="TokenGeneration - Request 1" id="0e0bd964-c12e-4851-b667-b23ecd5353ed"><con:settings/><con:config service="TokenGeneration" resourcePath="/dev/sys/api/v${version}/Token" methodName="TokenGeneration" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TokenGeneration - Request 1" id="559d0d58-9575-4f31-9504-f74cea2e9e8f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token</con:originalUri><con:assertion type="GroovyScriptAssertion" id="283e4125-f4b9-433a-83f3-22832355ae9b" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="64fb55ae-4c43-4ecd-a363-9511aa3701dc" name="CaptureToken"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+
+def Token = response
+assert Token != null
+context.testCase.setPropertyValue("token", Token)
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${Password}"/>
+  <con:entry key="username" value="${UserName}"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PUT_ProductLockStatus - Request 1" id="9032e7bd-6c4c-47dd-9c77-af0adc56e4b9"><con:settings/><con:config service="PUT_ProductLockStatus" resourcePath="/dev/sys/api/v${version}/ProductLockStatus" methodName="PUT_ProductLockStatus" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT_ProductLockStatus - Request 1" id="eb62f5d3-e77f-49ae-8537-6e38366bb04c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+  "productId": "720512",
+  "attributeGroupId": "gfv",
+  "facilityId": "125",
+  "schedWeek": "2018-10-24T11:56:19.078Z",
+  "lockStatus": "false",
+  "lockedBy": "ireddy",
+  "lockedDate": "2018-10-24T11:56:19.078Z"
+}</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/ProductLockStatus</con:originalUri><con:assertion type="GroovyScriptAssertion" id="512aef80-4486-45ae-9d9a-e3c3916ec9a0" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>token</con:name><con:value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MDM4Mjk1OCIsImV4cCI6IjE1NDA0NjkzNTgifQ.pKz8zlcIsb9ZhDYkkpaQi9vf9fFwoXIQneWuZsrf4ps</con:value></con:property><con:property><con:name>dataHolder</con:name><con:value/></con:property><con:property><con:name>loopCounter</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:properties/><con:setupScript>import groovy.util.GroovyScriptEngine
+
+/**
+* TestSuite Setup 
+* 
+* @author  Cigniti
+*/
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+context.projectPath = groovyUtils.projectPath
+context.gse = new GroovyScriptEngine(context.projectPath + "/scripts/")</con:setupScript><con:tearDownScript>/**
+* TestSuite Teardown 
+* 
+* @author  Cigniti
+*/
+
+def reportClass = com.cigniti.soap.ui.core.report.Reporter
+scriptLoader = context.gse.loadScriptByName("TestSuiteTearDown.groovy")
+script = scriptLoader.newInstance(context.projectPath,context,reportClass)
+script.publishReports()
+
+//Write script logs to a file - TestSuiteRunListener.afterRun
+
+def logArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("script log")
+
+//## Get TestSuite name ##//
+//def TSName = testRunner.testCase.testSuite.name
+def TSName = this.testDataHolder
+
+//Get LogFile directory and Construct LogFile
+//def FileName = TSName + "-Logs.txt"
+def LogFilePath = context.expand('${#Project#TestReportPath}')
+def FileName = TSName + "-Logs" + ((int)(Math.random()*10000)) + ".txt"
+FileName = LogFilePath + FileName
+
+def LogFile = new File(FileName)
+
+log.info "Generating Script logs....\r\n" + FileName
+
+LogFile.createNewFile()
+LogFile.write("Generating Script logs....\r\n")
+
+if(logArea !=null)
+{
+def model = logArea.model
+	if(model.size > 0) {
+		for(c in 0..(model.size-1))
+		{
+			LogFile.append(model.getElementAt(c).toString() + "\r\n")
+		}
+	}
+}</con:tearDownScript></con:testSuite><con:properties><con:property><con:name>Alert</con:name><con:value>rO0ABXNyACNjb20uY2lnbml0aS5zb2FwLnVpLmNvcmUuRGF0YU1hcHBlcgAAAAAAAAABAgAESQAKZGVmYXVsdFJvd1sADGFyckNvbnRhaW5lcnQAFFtbTGphdmEvbGFuZy9TdHJpbmc7TAANZGF0YUNvbnRhaW5lcnQAD0xqYXZhL3V0aWwvTWFwO0wAB3Jvd0RhdGF0ABBMamF2YS91dGlsL0xpc3Q7eHAAAAAAdXIAFFtbTGphdmEubGFuZy5TdHJpbmc7Mk0JrYQy5FcCAAB4cAAAAAN1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAIdAAJUm93X0luZGV4dAAGUnVuUm93dAAPVGVzdFNjZW5hcmlvX0lEdAAgVGVzdFNjZW5hcmlvX0RldGFpbGVkRGVzY3JpcHRpb250AAZVc2VySWR0AAdBbGVydElkdAAKSHR0cFN0YXR1c3QAB3N1YmplY3R1cQB+AAcAAAAIdAABMXQABFRSVUV0AA1Xb29kRHVja19UZXN0dAATV29vZER1Y2tfQWxlcnRBbGVydHQAB1NBSk9ORVN0AAExdAADMjAwdAAVU3lzdGVtIEFsZXJ0X1Rlc3RpbmcxdXEAfgAHAAAACHQAATJ0AARUUlVFdAANV29vZER1Y2tfVGVzdHQAFVdvb2REdWNrX0FsZXJ0QWxlcnRfMHQABklyZWRkeXQAATF0AAMyMDB0ABZTeXN0ZW0gQWxlcnRfVGVzdGluZzEyc3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA/QAAAAAAADHcIAAAAEAAAAAhxAH4AC3NyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAACdwQAAAACcQB+ABRxAH4AHXhxAH4ADnNxAH4AJQAAAAJ3BAAAAAJxAH4AF3EAfgAgeHEAfgAJc3EAfgAlAAAAAncEAAAAAnEAfgAScQB+ABt4cQB+AA9zcQB+ACUAAAACdwQAAAACcQB+ABhxAH4AIXhxAH4ADHNxAH4AJQAAAAJ3BAAAAAJxAH4AFXEAfgAeeHEAfgANc3EAfgAlAAAAAncEAAAAAnEAfgAWcQB+AB94cQB+ABBzcQB+ACUAAAACdwQAAAACcQB+ABlxAH4AInhxAH4ACnNxAH4AJQAAAAJ3BAAAAAJxAH4AE3EAfgAceHhzcQB+ACUAAAADdwQAAAADcQB+AAhxAH4AEXEAfgAaeA==</con:value></con:property></con:properties><con:afterLoadScript>import com.cigniti.soap.ui.core.DataMapper;
+import java.io.File;
+
+/**
+ * Project Setup
+ *
+ * @author  Cigniti
+ */
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectPath = groovyUtils.projectPath
+
+def alertDetails = new DataMapper().importData(projectPath+ "/TestData/WoodDuck/Alert.csv");
+
+project.setPropertyValue("Alert",alertDetails.preserveState())
+
+
+
+def testSuites=project.testSuiteList
+for(testSuite in testSuites) {
+	testCases=testSuite.testCaseList
+	
+	for(testCase in testCases) {
+		testCase.setPropertyValue("dataHolder","")
+		testCase.setPropertyValue("loopCounter","1")
+	}
+}</con:afterLoadScript><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

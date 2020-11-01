@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d8219d6e-df2a-4e8b-bba0-b02220fe74b8" activeEnvironment="Default" name="WoodDuck_Alert" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="33ed8310-74b5-4942-acdf-31a39bc26746" wadlVersion="http://wadl.dev.java.net/2009/02" name="Get_Alert_ByUserId" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="Get_Alert_ByUserId" path="/dev/sys/api/v${version}/Alert/ByUserId/${#TestCase#UserId}" id="7c46880f-d0cf-4da1-a328-56affddedf59"><con:settings/><con:parameters/><con:method name="Get_Alert_ByUserId" id="5d552137-3511-4dc5-bbc1-80c72e7fe60d" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="73b08271-a870-4112-9e8d-7c40a30f85b2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/ByUserId/</con:originalUri><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="01a8a426-9b08-4804-9208-682ca65650c4" wadlVersion="http://wadl.dev.java.net/2009/02" name="Get_Alert_ById" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="Get_Alert_ById" path="/dev/sys/api/v${version}/Alert/${#TestCase#AlertId}" id="099e0492-e600-4e71-891f-736f626cf1df"><con:settings/><con:parameters/><con:method name="Get_Alert_ById" id="dfa49b41-bfaf-428d-8f14-dded5675e7d5" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>405</con:status><con:params/><con:element xmlns:ns="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1">ns:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1">ns:Response</con:element></con:representation><con:request name="Request 1" id="87ca2839-1a8e-4401-b3e0-e365053468de" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/</con:originalUri><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="857f3263-aea1-456e-b802-acf684cb273c" wadlVersion="http://wadl.dev.java.net/2009/02" name="PUT_Alert_ById" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="PUT_Alert_ById" path="/dev/sys/api/v${version}/Alert/1" id="26d1eba8-40bc-490d-8ed1-d306e5c08c4b"><con:settings/><con:parameters/><con:method name="PUT_Alert_ById" id="ae677c52-87f0-4e9e-8fe2-a364ecc7223c" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:ns="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1">ns:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1">ns:Response</con:element></con:representation><con:request name="Request 1" id="2cbb0478-0cfd-4bfc-97d4-023df0810365" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+   "alertId": 1,
+   "userId": "SAJONES",
+   "subject": "System Alert_Testing",
+   "priority": "H",
+   "body": "Testing the System Alert feature",
+   "read": "Y",
+   "createdDate": "2018-05-01T10:55:55.697",
+   "createdBy": "ADMIN",
+   "lastChanged": "2018-09-21T18:41:52.58",
+   "lastChangedBy": "ADMIN",
+   "isNew": "N",
+   "isRevised": "N",
+   "activeStatus": "Y"
+}</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1</con:originalUri><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="50369082-f50e-4fab-bef1-e98a618673dc" wadlVersion="http://wadl.dev.java.net/2009/02" name="POST_Alert_New" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="POST_Alert_New" path="/dev/sys/api/v${version}/Alert" id="01494ffd-f801-40f8-bc80-50e8c06404b6"><con:settings/><con:parameters/><con:method name="POST_Alert_New" id="17f5698d-429a-4239-be67-6aa0d2e84780" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="dd169094-d258-489a-87b2-a5ba02c36a83" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authprization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+   "alertId":2 ,
+   "userId": "SAJONES",
+   "subject": "User",
+   "priority": "H",
+   "body": "Testing the System Alert feature",
+   "read": "Y",
+   "createdDate": "2018-05-01T10:55:55.697",
+   "createdBy": "ireddy",
+   "lastChanged": "2018-09-21T18:41:52.58",
+   "lastChangedBy": "ireddy",
+   "isNew": "Y",
+   "isRevised": "N",
+   "activeStatus": "Y"
+}</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert</con:originalUri><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="af306201-d9c1-4476-8855-2c8a2dda5c1a" wadlVersion="http://wadl.dev.java.net/2009/02" name="TokenGeneration" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint></con:endpoints><con:resource name="TokenGeneration" path="/dev/sys/api/v${version}/Token" id="008a732c-fa84-4645-a13f-3dd15ff8024d"><con:settings/><con:parameters><con:parameter><con:name>username</con:name><con:value>ireddy</con:value><con:style>QUERY</con:style><con:default>ireddy</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>password</con:name><con:value>Password1</con:value><con:style>QUERY</con:style><con:default>Password1</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="TokenGeneration" id="2ce6878b-4899-411e-85a4-4140129ba28b" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="5c95c1bb-7037-4327-b6bd-7782ade3fd08" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${Password}"/>
+  <con:entry key="username" value="${UserName}"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="6335f947-da18-4b16-bc36-17fb5d32218d" name="WoodDuck_Alert"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f4f2abe3-f377-4f56-9aa6-585d6b91d745" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WoodDuck_Alert" searchProperties="true" disabled="true"><con:settings/><con:testStep type="restrequest" name="TokenGeneration - Request 1" id="98adfcf2-a2ca-43da-b4fa-15b0886a2c7a"><con:settings/><con:config service="TokenGeneration" resourcePath="/dev/sys/api/v${version}/Token" methodName="TokenGeneration" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TokenGeneration - Request 1" id="5c95c1bb-7037-4327-b6bd-7782ade3fd08" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token</con:originalUri><con:assertion type="GroovyScriptAssertion" id="75f88aec-7692-42aa-9e11-4906062e2ab4" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9638cdca-e839-4cb2-b2d1-051728b5065e" name="CaptureToken"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+
+def Token = response
+assert Token != null
+context.testCase.setPropertyValue("token", Token)
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${Password}"/>
+  <con:entry key="username" value="${UserName}"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="POST_Alert_New - Request 1" id="0489fda8-be58-4c10-97a4-5bf14cecd08b" disabled="true"><con:settings/><con:config service="POST_Alert_New" resourcePath="/dev/sys/api/v${version}/Alert" methodName="POST_Alert_New" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST_Alert_New - Request 1" id="dd169094-d258-489a-87b2-a5ba02c36a83" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authprization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+   "alertId": 1,
+   "userId": "SAJONES",
+   "subject": "System Alert",
+   "priority": "H",
+   "body": "Testing the System Alert feature",
+   "read": "Y",
+   "createdDate": "2018-05-01T10:55:55.697",
+   "createdBy": "ADMIN",
+   "lastChanged": "2018-09-21T18:41:52.58",
+   "lastChangedBy": "ADMIN",
+   "isNew": "Y",
+   "isRevised": "N",
+   "activeStatus": "Y"
+}</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert</con:originalUri><con:assertion type="GroovyScriptAssertion" id="daaa8185-fb19-44c9-9b76-75df5dc649ab" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+//assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_Alert_ById - Request 1" id="391a94cf-de20-4b3d-8053-c037b8cf0bca"><con:settings/><con:config service="Get_Alert_ById" resourcePath="/dev/sys/api/v${version}/Alert/${#TestCase#AlertId}" methodName="Get_Alert_ById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_Alert_ById - Request 1" id="87ca2839-1a8e-4401-b3e0-e365053468de" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1</con:originalUri><con:assertion type="GroovyScriptAssertion" id="61e64ed6-d299-4ecb-9567-c48f0daf4776" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PUT_Alert_ById - Request 1" id="085b3a1d-4878-483a-83ba-fcdaf8eb7b62"><con:settings/><con:config service="PUT_Alert_ById" resourcePath="/dev/sys/api/v${version}/Alert/1" methodName="PUT_Alert_ById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT_Alert_ById - Request 1" id="2cbb0478-0cfd-4bfc-97d4-023df0810365" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+   "alertId": 1,
+   "userId": "SAJONES",
+   "subject": "System Alert_Testing",
+   "priority": "H",
+   "body": "Testing the System Alert feature",
+   "read": "Y",
+   "createdDate": "2018-05-01T10:55:55.697",
+   "createdBy": "ADMIN",
+   "lastChanged": "2018-09-21T18:41:52.58",
+   "lastChangedBy": "ADMIN",
+   "isNew": "N",
+   "isRevised": "N",
+   "activeStatus": "Y"
+}</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1</con:originalUri><con:assertion type="GroovyScriptAssertion" id="66b3d723-94db-4fd1-bc1e-e24a41f7aecd" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_Alert_ByUserId - Request 1" id="a8807cc2-256b-476f-a05b-b08c3e4eb7d7"><con:settings/><con:config service="Get_Alert_ByUserId" resourcePath="/dev/sys/api/v${version}/Alert/ByUserId/${#TestCase#UserId}" methodName="Get_Alert_ByUserId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_Alert_ByUserId - Request 1" id="73b08271-a870-4112-9e8d-7c40a30f85b2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/ByUserId/SAJONES</con:originalUri><con:assertion type="GroovyScriptAssertion" id="644d8c49-ea63-467d-9b3f-ebb2b642599c" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>token</con:name><con:value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MDI4OTAxOCIsImV4cCI6IjE1NDAzNzU0MTgifQ.iVB4b9TETnL_u7GYJLHiyKj7-_VNeEOy33GWYH7naDw</con:value></con:property><con:property><con:name>dataHolder</con:name><con:value/></con:property><con:property><con:name>loopCounter</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:testCase id="24953a00-7599-4fbf-a994-def579dc00ec" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WoodDuck_Test" searchProperties="true"><con:settings/><con:testStep type="groovy" name="setup" id="444d2877-9999-423a-b75a-b6a9a494af9b">
+        <con:settings/>
+        <con:config><script>/**
+* TestCase Setup Step 
+* 
+* @author  Cigniti
+*/
+
+context.script.execute()</script></con:config>
+      </con:testStep><con:testStep type="restrequest" name="TokenGeneration - Request 1" id="a5ba3307-d8dc-4633-acfb-1d527926d13d"><con:settings/><con:config service="TokenGeneration" resourcePath="/dev/sys/api/v${version}/Token" methodName="TokenGeneration" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TokenGeneration - Request 1" id="5c95c1bb-7037-4327-b6bd-7782ade3fd08" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token</con:originalUri><con:assertion type="GroovyScriptAssertion" id="75f88aec-7692-42aa-9e11-4906062e2ab4" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9638cdca-e839-4cb2-b2d1-051728b5065e" name="CaptureToken"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+
+def Token = response
+assert Token != null
+context.testCase.setPropertyValue("token", Token)
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${Password}"/>
+  <con:entry key="username" value="${UserName}"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_Alert_ByUserId - Request 1" id="544b926d-a29d-497b-89a1-8ab3ac913729"><con:settings/><con:config service="Get_Alert_ByUserId" resourcePath="/dev/sys/api/v${version}/Alert/ByUserId/${#TestCase#UserId}" methodName="Get_Alert_ByUserId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_Alert_ByUserId - Request 1" id="73b08271-a870-4112-9e8d-7c40a30f85b2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/ByUserId/SAJONES</con:originalUri><con:assertion type="GroovyScriptAssertion" id="644d8c49-ea63-467d-9b3f-ebb2b642599c" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="222b5ede-4d59-48b4-be91-903e7b890367" name=" Script Assertion UserID"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+def jsonResponse = new JsonSlurper().parseText(response)
+
+def UserID = jsonResponse.userId[0]
+assert UserID != null
+
+context.testCase.setPropertyValue("ActUserId", UserID.toString())
+
+def Actualuserid = context.testCase.getPropertyValue("ActUserId")
+
+def ExpecteduserID = context.expand('${#TestCase#UserId}')
+
+assert ExpecteduserID.equals(Actualuserid)
+//assert ExpecteduserID.equals(UserID.toString())</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="aadea94c-b6ac-4179-9cc4-0eb68bb5c800" name="LogHandler"><con:configuration><scriptText/></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_Alert_ById - Request 1" id="d800a9d3-2b16-4d8c-98eb-331814a0bb23"><con:settings/><con:config service="Get_Alert_ById" resourcePath="/dev/sys/api/v${version}/Alert/${#TestCase#AlertId}" methodName="Get_Alert_ById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_Alert_ById - Request 1" id="87ca2839-1a8e-4401-b3e0-e365053468de" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1</con:originalUri><con:assertion type="GroovyScriptAssertion" id="61e64ed6-d299-4ecb-9567-c48f0daf4776" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="7919eb2c-34fe-4138-9fdd-319cca8ce1d0" name="Script Assertion AlertID"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+def jsonResponse = new JsonSlurper().parseText(response)
+
+def alertID = jsonResponse.alertId
+assert alertID != null
+
+context.testCase.setPropertyValue("alertId", alertID.toString())
+
+def Actualalertid = context.testCase.getPropertyValue("alertId")
+
+def ExpectedalertID = context.expand('${#TestCase#alertId}')
+
+assert ExpectedalertID.equals(Actualalertid)
+//assert ExpecteduserID.equals(UserID.toString())</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="POST_Alert_New - Request 1" id="1fcad912-4992-4b0f-a9df-f702a16a2b75"><con:settings/><con:config service="POST_Alert_New" resourcePath="/dev/sys/api/v${version}/Alert" methodName="POST_Alert_New" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST_Alert_New - Request 1" id="dd169094-d258-489a-87b2-a5ba02c36a83" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authprization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+   "alertId":3 ,
+   "userId": "SAJONES",
+   "subject": "User",
+   "priority": "H",
+   "body": "Testing the System Alert feature",
+   "read": "Y",
+   "createdDate": "2018-05-01T10:55:55.697",
+   "createdBy": "ireddy",
+   "lastChanged": "2018-09-21T18:41:52.58",
+   "lastChangedBy": "ireddy",
+   "isNew": "Y",
+   "isRevised": "N",
+   "activeStatus": "Y"
+}</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert</con:originalUri><con:assertion type="GroovyScriptAssertion" id="7d6254b1-dcc5-46b1-a01c-d96f35184f4f" name="Script Assertion"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 401 Unauthorized'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PUT_Alert_ById - Request 1" id="3b6ce459-19db-4e53-80df-6a2a35f464be"><con:settings/><con:config service="PUT_Alert_ById" resourcePath="/dev/sys/api/v${version}/Alert/1" methodName="PUT_Alert_ById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT_Alert_ById - Request 1" id="2cbb0478-0cfd-4bfc-97d4-023df0810365" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request>{
+   "alertId": 1,
+   "userId": "SAJONES",
+   "subject": "${#TestCase#subject}",
+   "priority": "H",
+   "body": "Testing the System Alert feature",
+   "read": "Y",
+   "createdDate": "2018-05-01T10:55:55.697",
+   "createdBy": "ADMIN",
+   "lastChanged": "2018-09-21T18:41:52.58",
+   "lastChangedBy": "ADMIN",
+   "isNew": "N",
+   "isRevised": "N",
+   "activeStatus": "Y"
+}</con:request><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/1</con:originalUri><con:assertion type="GroovyScriptAssertion" id="05f80cf7-9009-4554-82fa-21aab4451320" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="5e7d6e6f-ac61-4c34-ba3e-5b25753df60a" name="Script Assertion subject"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+def jsonResponse = new JsonSlurper().parseText(response)
+
+def SUBJECT = jsonResponse.subject
+assert SUBJECT != null
+
+context.testCase.setPropertyValue("subject", SUBJECT.toString())
+
+def ActualSUBJECT = context.testCase.getPropertyValue("subject")
+
+def ExpectedSUBJECT = context.expand('${#TestCase#subject}')
+
+assert ExpectedSUBJECT.equals(ActualSUBJECT)
+////assert ExpecteduserID.equals(UserID.toString())</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Teardown" id="f79c5187-d53b-442f-bff3-b3da5cb1dfeb">
+        <con:settings/>
+        <con:config>
+          <script>/**
+* TestCase Teardown Step 
+* 
+* @author  Cigniti
+*/
+
+if(context.i == null){
+	context.i = 1
+}
+
+context.script.report("Test Request","Your Custom Message Goes Here" + context.i)
+context.i = context.i + 1
+
+context.script.loop()</script>
+        </con:config>
+      </con:testStep><con:setupScript>import groovy.util.GroovyScriptEngine
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+context.projectPath = groovyUtils.projectPath
+context.gse = new GroovyScriptEngine(context.projectPath + "/scripts/")
+scritpLoader = context.gse.loadScriptByName("TestCaseScripts.groovy")
+context.script = scritpLoader.newInstance(context)</con:setupScript><con:properties><con:property><con:name>token</con:name><con:value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXJlZGR5IiwibmJmIjoiMTU0MTE2NTQxOCIsImV4cCI6IjE1NDEyNTE4MTgifQ.bwBYgSmqAjEiApxEO2uijmFMRIMS3KFD-chagn2TDxU</con:value></con:property><con:property><con:name>dataHolder</con:name><con:value>rO0ABXNyACNjb20uY2lnbml0aS5zb2FwLnVpLmNvcmUuRGF0YU1hcHBlcgAAAAAAAAABAgAESQAKZGVmYXVsdFJvd1sADGFyckNvbnRhaW5lcnQAFFtbTGphdmEvbGFuZy9TdHJpbmc7TAANZGF0YUNvbnRhaW5lcnQAD0xqYXZhL3V0aWwvTWFwO0wAB3Jvd0RhdGF0ABBMamF2YS91dGlsL0xpc3Q7eHAAAAAAdXIAFFtbTGphdmEubGFuZy5TdHJpbmc7Mk0JrYQy5FcCAAB4cAAAAAN1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAIdAAJUm93X0luZGV4dAAGUnVuUm93dAAPVGVzdFNjZW5hcmlvX0lEdAAgVGVzdFNjZW5hcmlvX0RldGFpbGVkRGVzY3JpcHRpb250AAZVc2VySWR0AAdBbGVydElkdAAKSHR0cFN0YXR1c3QAB3N1YmplY3R1cQB+AAcAAAAIdAABMXQABFRSVUV0AA1Xb29kRHVja19UZXN0dAATV29vZER1Y2tfQWxlcnRBbGVydHQAB1NBSk9ORVN0AAExdAADMjAwdAAVU3lzdGVtIEFsZXJ0X1Rlc3RpbmcxdXEAfgAHAAAACHQAATJ0AARUUlVFdAANV29vZER1Y2tfVGVzdHQAFVdvb2REdWNrX0FsZXJ0QWxlcnRfMHQABklyZWRkeXQAATF0AAMyMDB0ABZTeXN0ZW0gQWxlcnRfVGVzdGluZzEyc3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA/QAAAAAAADHcIAAAAEAAAAAhxAH4AC3NyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAACdwQAAAACcQB+ABRxAH4AHXhxAH4ADnNxAH4AJQAAAAJ3BAAAAAJxAH4AF3EAfgAgeHEAfgAJc3EAfgAlAAAAAncEAAAAAnEAfgAScQB+ABt4cQB+AA9zcQB+ACUAAAACdwQAAAACcQB+ABhxAH4AIXhxAH4ADHNxAH4AJQAAAAJ3BAAAAAJxAH4AFXEAfgAeeHEAfgANc3EAfgAlAAAAAncEAAAAAnEAfgAWcQB+AB94cQB+ABBzcQB+ACUAAAACdwQAAAACcQB+ABlxAH4AInhxAH4ACnNxAH4AJQAAAAJ3BAAAAAJxAH4AE3EAfgAceHhw</con:value></con:property><con:property><con:name>loopCounter</con:name><con:value>2</con:value></con:property><con:property><con:name>TestScenario_ID</con:name><con:value>WoodDuck_Test</con:value></con:property><con:property><con:name>Row_Index</con:name><con:value>2</con:value></con:property><con:property><con:name>HttpStatus</con:name><con:value>200</con:value></con:property><con:property><con:name>TestScenario_DetailedDescription</con:name><con:value>WoodDuck_AlertAlert_0</con:value></con:property><con:property><con:name>UserId</con:name><con:value>Ireddy</con:value></con:property><con:property><con:name>RunRow</con:name><con:value>TRUE</con:value></con:property><con:property><con:name>iterationDescription1</con:name><con:value>WoodDuck_AlertAlert</con:value></con:property><con:property><con:name>AlertId</con:name><con:value>1</con:value></con:property><con:property><con:name>subject</con:name><con:value>System Alert_Testing12</con:value></con:property><con:property><con:name>body</con:name><con:value>Testing the System Alert feature</con:value></con:property><con:property><con:name>iterationDescription2</con:name><con:value>WoodDuck_AlertAlert_0</con:value></con:property><con:property><con:name>userId1</con:name><con:value>[SAJONES]</con:value></con:property><con:property><con:name>actUserId</con:name><con:value>SAJONES</con:value></con:property></con:properties></con:testCase><con:testCase id="d9bb9e77-c439-4abd-802f-cb0d98b867b6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Testing" searchProperties="true" disabled="true"><con:settings/><con:testStep type="restrequest" name="TokenGeneration - Request 1" id="b64fee12-2eae-4aa3-813c-757b7dbc41b6"><con:settings/><con:config service="TokenGeneration" resourcePath="/dev/sys/api/v${version}/Token" methodName="TokenGeneration" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TokenGeneration - Request 1" id="5c95c1bb-7037-4327-b6bd-7782ade3fd08" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${ProjectURL}</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Token</con:originalUri><con:assertion type="GroovyScriptAssertion" id="75f88aec-7692-42aa-9e11-4906062e2ab4" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9638cdca-e839-4cb2-b2d1-051728b5065e" name="CaptureToken"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.expand('${#Response}')
+
+def Token = response
+assert Token != null
+context.testCase.setPropertyValue("token", Token)
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="${Password}"/>
+  <con:entry key="username" value="${UserName}"/>
+</con:parameters><con:parameterOrder><con:entry>username</con:entry><con:entry>password</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Get_Alert_ByUserId - Request 1" id="f3c9976e-900d-499b-a9fe-5aaf12f6abd2"><con:settings/><con:config service="Get_Alert_ByUserId" resourcePath="/dev/sys/api/v${version}/Alert/ByUserId/${#TestCase#UserId}" methodName="Get_Alert_ByUserId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get_Alert_ByUserId - Request 1" id="73b08271-a870-4112-9e8d-7c40a30f85b2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#TestCase#token}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://nextapiqa.srv.gapac.com</con:endpoint><con:request/><con:originalUri>http://nextapiqa.srv.gapac.com/dev/sys/api/v1/Alert/ByUserId/SAJONES</con:originalUri><con:assertion type="GroovyScriptAssertion" id="644d8c49-ea63-467d-9b3f-ebb2b642599c" name="Status"><con:configuration><scriptText>def ExpectedHTTPResponse = 'HTTP/1.1 200 OK'
+def headers = messageExchange.response.responseHeaders
+def actualHTTPResponse = headers['#status#']
+assert (actualHTTPResponse[0].contains(ExpectedHTTPResponse)), "Found Invalid URI in the response"
+</scriptText></con:configuration></con:assertion><con:credentials><con:username>${UserName}</con:username><con:password>${Password}</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>dataHolder</con:name><con:value/></con:property><con:property><con:name>loopCounter</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:properties/><con:setupScript>import groovy.util.GroovyScriptEngine
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+context.projectPath = groovyUtils.projectPath
+context.gse = new GroovyScriptEngine(context.projectPath + "/scripts/")</con:setupScript><con:tearDownScript>/**
+* TestSuite Teardown 
+* 
+* @author  Cigniti
+*/
+
+def reportClass = com.cigniti.soap.ui.core.report.Reporter
+scriptLoader = context.gse.loadScriptByName("TestSuiteTearDown.groovy")
+script = scriptLoader.newInstance(context.projectPath,context,reportClass)
+script.publishReports()
+
+//Write script logs to a file - TestSuiteRunListener.afterRun
+
+def logArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("script log")
+
+//## Get TestSuite name ##//
+//def TSName = testRunner.testCase.testSuite.name
+def TSName = this.testDataHolder
+
+//Get LogFile directory and Construct LogFile
+//def FileName = TSName + "-Logs.txt"
+def LogFilePath = context.expand('${#Project#TestReportPath}')
+def FileName = TSName + "-Logs" + ((int)(Math.random()*10000)) + ".txt"
+FileName = LogFilePath + FileName
+
+def LogFile = new File(FileName)
+
+log.info "Generating Script logs....\r\n" + FileName
+
+LogFile.createNewFile()
+LogFile.write("Generating Script logs....\r\n")
+
+if(logArea !=null)
+{
+def model = logArea.model
+	if(model.size > 0) {
+		for(c in 0..(model.size-1))
+		{
+			LogFile.append(model.getElementAt(c).toString() + "\r\n")
+		}
+	}
+}</con:tearDownScript></con:testSuite><con:properties><con:property><con:name>TestReportPath</con:name><con:value>C:\SOAP_POC_Georgia_Pacific\WoodDuck\Wood Duck/log/WoodDuck/Alert/</con:value></con:property><con:property><con:name>HeaderPositiveTests</con:name><con:value>rO0ABXNyACNjb20uY2lnbml0aS5zb2FwLnVpLmNvcmUuRGF0YU1hcHBlcgAAAAAAAAABAgAESQAKZGVmYXVsdFJvd1sADGFyckNvbnRhaW5lcnQAFFtbTGphdmEvbGFuZy9TdHJpbmc7TAANZGF0YUNvbnRhaW5lcnQAD0xqYXZhL3V0aWwvTWFwO0wAB3Jvd0RhdGF0ABBMamF2YS91dGlsL0xpc3Q7eHAAAAAAdXIAFFtbTGphdmEubGFuZy5TdHJpbmc7Mk0JrYQy5FcCAAB4cAAAAAJ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAGdAAJUm93X0luZGV4dAAGUnVuUm93dAAPVGVzdFNjZW5hcmlvX0lEdAAgVGVzdFNjZW5hcmlvX0RldGFpbGVkRGVzY3JpcHRpb250AAZVc2VySWR0AApIdHRwU3RhdHVzdXEAfgAHAAAABnQAATF0AARUUlVFdAANV29vZER1Y2tfVGVzdHQAE1dvb2REdWNrX0FsZXJ0QWxlcnR0AAdTQUpPTkVTdAADMjAwc3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA/QAAAAAAADHcIAAAAEAAAAAZxAH4AC3NyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAABdwQAAAABcQB+ABJ4cQB+AAlzcQB+ABgAAAABdwQAAAABcQB+ABB4cQB+AA5zcQB+ABgAAAABdwQAAAABcQB+ABV4cQB+AAxzcQB+ABgAAAABdwQAAAABcQB+ABN4cQB+AA1zcQB+ABgAAAABdwQAAAABcQB+ABR4cQB+AApzcQB+ABgAAAABdwQAAAABcQB+ABF4eHNxAH4AGAAAAAJ3BAAAAAJxAH4ACHEAfgAPeA==</con:value></con:property><con:property><con:name>WoodDuck_Alert</con:name><con:value>rO0ABXNyACNjb20uY2lnbml0aS5zb2FwLnVpLmNvcmUuRGF0YU1hcHBlcgAAAAAAAAABAgAESQAKZGVmYXVsdFJvd1sADGFyckNvbnRhaW5lcnQAFFtbTGphdmEvbGFuZy9TdHJpbmc7TAANZGF0YUNvbnRhaW5lcnQAD0xqYXZhL3V0aWwvTWFwO0wAB3Jvd0RhdGF0ABBMamF2YS91dGlsL0xpc3Q7eHAAAAAAdXIAFFtbTGphdmEubGFuZy5TdHJpbmc7Mk0JrYQy5FcCAAB4cAAAAAN1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAIdAAJUm93X0luZGV4dAAGUnVuUm93dAAPVGVzdFNjZW5hcmlvX0lEdAAgVGVzdFNjZW5hcmlvX0RldGFpbGVkRGVzY3JpcHRpb250AAZVc2VySWR0AAdBbGVydElkdAAKSHR0cFN0YXR1c3QAB3N1YmplY3R1cQB+AAcAAAAIdAABMXQABFRSVUV0AA1Xb29kRHVja19UZXN0dAATV29vZER1Y2tfQWxlcnRBbGVydHQAB1NBSk9ORVN0AAExdAADMjAwdAAVU3lzdGVtIEFsZXJ0X1Rlc3RpbmcxdXEAfgAHAAAACHQAATJ0AARUUlVFdAANV29vZER1Y2tfVGVzdHQAFVdvb2REdWNrX0FsZXJ0QWxlcnRfMHQABklyZWRkeXQAATF0AAMyMDB0ABZTeXN0ZW0gQWxlcnRfVGVzdGluZzEyc3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA/QAAAAAAADHcIAAAAEAAAAAhxAH4AC3NyABNqYXZhLnV0aWwuQXJyYXlMaXN0eIHSHZnHYZ0DAAFJAARzaXpleHAAAAACdwQAAAACcQB+ABRxAH4AHXhxAH4ADnNxAH4AJQAAAAJ3BAAAAAJxAH4AF3EAfgAgeHEAfgAJc3EAfgAlAAAAAncEAAAAAnEAfgAScQB+ABt4cQB+AA9zcQB+ACUAAAACdwQAAAACcQB+ABhxAH4AIXhxAH4ADHNxAH4AJQAAAAJ3BAAAAAJxAH4AFXEAfgAeeHEAfgANc3EAfgAlAAAAAncEAAAAAnEAfgAWcQB+AB94cQB+ABBzcQB+ACUAAAACdwQAAAACcQB+ABlxAH4AInhxAH4ACnNxAH4AJQAAAAJ3BAAAAAJxAH4AE3EAfgAceHhzcQB+ACUAAAADdwQAAAADcQB+AAhxAH4AEXEAfgAaeA==</con:value></con:property><con:property><con:name>Get_Alert_ById-Request1</con:name><con:value>{"alertId":1,"userId":"720513","subject":"alert","priority":"h","body":"alertmessage","read":"y","createdDate":"2018-05-01T10:55:55.697","createdBy":"ADMIN","lastChanged":"2018-10-25T10:35:13.7","lastChangedBy":"vamsi","isNew":"N","isRevised":"N","activeStatus":"Y"}</con:value></con:property></con:properties><con:afterLoadScript>import com.cigniti.soap.ui.core.DataMapper;
+import java.io.File;
+/**
+ * Project Setup
+ *
+ * @author  Cigniti
+ */
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectPath = groovyUtils.projectPath
+
+if(new File(projectPath+ "/log/WoodDuck/Alert").exists()){
+log.info "log directory already exist..."
+}else if(new File(projectPath+ "/log").exists()){
+new File((projectPath+ "/log/WoodDuck/Alert")).mkdir();
+log.info "log directory created..."
+}else if(new File(projectPath).exists()){
+new File((projectPath+ "/log")).mkdir();
+new File((projectPath+ "/log/WoodDuck/Alert")).mkdir();
+log.info "log directory created..."
+}
+
+project.setPropertyValue("TestReportPath", projectPath+ "/log/WoodDuck/Alert/")
+
+def alert = new DataMapper().importData(projectPath+ "/TestData/WoodDuck/Alert.csv");
+
+project.setPropertyValue("WoodDuck_Alert",alert.preserveState())
+
+def testSuites=project.testSuiteList
+for(testSuite in testSuites) {
+testCases=testSuite.testCaseList
+for(testCase in testCases) {
+testCase.setPropertyValue("dataHolder","")
+testCase.setPropertyValue("loopCounter","1")
+}
+}
+
+</con:afterLoadScript><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

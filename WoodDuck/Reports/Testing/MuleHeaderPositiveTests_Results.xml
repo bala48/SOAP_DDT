@@ -1,0 +1,154 @@
+
+<Reports>
+    <TestExecutionSummary>
+        <DateAndTime>09/19/2018,  20:07:09</DateAndTime>
+        <SuiteExecuted>MuleHeaderPositiveTests</SuiteExecuted>
+        <TestExecuted></TestExecuted>
+        <ServiceEndPoint>&lt;br&gt;https://ams-ccs-rest-test.test-racapi.com&lt;br&gt;</ServiceEndPoint>
+    </TestExecutionSummary>
+    <Testcases>
+        <Testcase>
+            <Name>Header_RegionID</Name>
+            <Description>testcase 1</Description>
+            <Status>finished</Status>
+            <Duration></Duration>
+            <Steps>
+                <Step>
+                    <Name>setup- Iteration 1 CCS_Header_RegionID_1</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:04</Timestamp>
+                </Step>
+                <Step>
+                    <Name>CCS - Request1-</Name>
+                    <Description> REQUEST:POST https://ams-ccs-rest-test.test-racapi.com/CCS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+ClientOriginator: 42&#xD;
+Revision: 1.1&#xD;
+ClientID: 40&#xD;
+MessageID: CCS001 -  1537367832889&#xD;
+Content-Length: 3411&#xD;
+Host: ams-ccs-rest-test.test-racapi.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+Authorization: Basic ZGV2RVNCZGV2MjpkZXZFU0JkZXYyIQ==&#xD;
+&#xD;
+RESPONSE: HTTP/1.1 201 &#xD;
+Content-Type: application/json;charset=UTF-8&#xD;
+Date: Wed, 19 Sep 2018 14:37:03 GMT&#xD;
+MessageID: CCS001 -  1537367832889&#xD;
+Server: &#xD;
+Content-Length: 141&#xD;
+Connection: keep-alive&#xD;
+&#xD;
+{
+  "CustomerID": "9999394271103",
+  "StatusInfo": {
+    "StatusCode": "200",
+    "StatusCodeDetail": "Customer create was successful."
+  }
+}</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:04</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Teardown-</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:07</Timestamp>
+                </Step>
+                <Step>
+                    <Name>setup- Iteration 2 CCS_Header_RegionID_2</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:07</Timestamp>
+                </Step>
+                <Step>
+                    <Name>CCS - Request1-</Name>
+                    <Description> REQUEST:POST https://ams-ccs-rest-test.test-racapi.com/CCS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+ClientOriginator: 42&#xD;
+Revision: 1.1&#xD;
+ClientID: 40&#xD;
+MessageID: CCS001 -  1537367831783&#xD;
+Content-Length: 3411&#xD;
+Host: ams-ccs-rest-test.test-racapi.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+Authorization: Basic ZGV2RVNCZGV2MjpkZXZFU0JkZXYyIQ==&#xD;
+&#xD;
+RESPONSE: HTTP/1.1 201 &#xD;
+Content-Type: application/json;charset=UTF-8&#xD;
+Date: Wed, 19 Sep 2018 14:37:04 GMT&#xD;
+MessageID: CCS001 -  1537367831783&#xD;
+Server: &#xD;
+Content-Length: 141&#xD;
+Connection: keep-alive&#xD;
+&#xD;
+{
+  "CustomerID": "9999394271107",
+  "StatusInfo": {
+    "StatusCode": "200",
+    "StatusCodeDetail": "Customer create was successful."
+  }
+}</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:07</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Teardown-</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:08</Timestamp>
+                </Step>
+                <Step>
+                    <Name>setup- Iteration 3 CCS_Header_RegionID_3</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:08</Timestamp>
+                </Step>
+                <Step>
+                    <Name>CCS - Request1-</Name>
+                    <Description> REQUEST:POST https://ams-ccs-rest-test.test-racapi.com/CCS HTTP/1.1&#xD;
+Accept-Encoding: gzip,deflate&#xD;
+Content-Type: application/json&#xD;
+ClientOriginator: 42&#xD;
+Revision: 1.1&#xD;
+ClientID: 40&#xD;
+MessageID: CCS001 -  1537367838221&#xD;
+Content-Length: 3411&#xD;
+Host: ams-ccs-rest-test.test-racapi.com&#xD;
+Connection: Keep-Alive&#xD;
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)&#xD;
+Authorization: Basic ZGV2RVNCZGV2MjpkZXZFU0JkZXYyIQ==&#xD;
+&#xD;
+RESPONSE: HTTP/1.1 201 &#xD;
+Content-Type: application/json;charset=UTF-8&#xD;
+Date: Wed, 19 Sep 2018 14:37:05 GMT&#xD;
+MessageID: CCS001 -  1537367838221&#xD;
+Server: &#xD;
+Content-Length: 141&#xD;
+Connection: keep-alive&#xD;
+&#xD;
+{
+  "CustomerID": "9999394271111",
+  "StatusInfo": {
+    "StatusCode": "200",
+    "StatusCodeDetail": "Customer create was successful."
+  }
+}</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:08</Timestamp>
+                </Step>
+                <Step>
+                    <Name>Teardown-</Name>
+                    <Description> REQUEST:</Description>
+                    <Status>passed</Status>
+                    <Timestamp>09/19/2018AND 20:07:09</Timestamp>
+                </Step>
+            </Steps>
+        </Testcase>
+    </Testcases>
+</Reports>
